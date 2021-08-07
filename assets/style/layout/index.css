@@ -1,0 +1,69 @@
+.carousel-item-height {
+  height: 600px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.shop-info-pic {
+  height: 400px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.btn-hover {
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.btn-hover:hover {
+  letter-spacing: 3px;
+}
+
+.card-img-height {
+  height: 300px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.card-shadow {
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.card-shadow:hover {
+  -webkit-box-shadow: 1px 3px 6px #BBB;
+          box-shadow: 1px 3px 6px #BBB;
+}
+
+.custer-comment {
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center center;
+}
+
+.card-img-circle {
+  width: 150px;
+  height: 150px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+}
+
+.card-height-hover {
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.card-height-hover:hover {
+  -webkit-transform: translateY(-20px);
+      -ms-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
+/*# sourceMappingURL=index.css.map */
