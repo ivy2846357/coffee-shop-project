@@ -13,6 +13,20 @@
     @include bg-cover;
 }
 
+.title-border{
+    position: relative;
+    &::after{
+        content:'';
+        position: absolute;
+        width: 100px;
+        height: 5px;
+        background-color: #D79771;
+        left: 50%;
+        top: 150%;
+        transform: translateX(-50%);
+    }
+}
+
 .btn-hover{
     transition: all .3s;
 
@@ -56,4 +70,21 @@
     &:hover{
         transform: translateY(-20px);
     }
+}
+
+.booking-form{
+    background-color: rgba(255, 255, 255, .8);
+    background-blend-mode: screen;
+    @include bg-cover;
+}
+
+.form-check-input:checked{
+    background-color: #D79771;
+    border-color: #D79771;
+}
+
+.form-check-input:focus,
+.form-control:focus{
+    box-shadow:0 0 0 0.25rem #FFEBC9;
+    border-color: transparent;
 }
