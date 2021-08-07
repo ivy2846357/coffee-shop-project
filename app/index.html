@@ -1,0 +1,258 @@
+---
+title: Boostrap Index
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+<!-- 首頁Banner -->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active carousel-item-height"
+            style="background-image: url(https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);">
+        </div>
+        <div class="carousel-item carousel-item-height"
+            style="background-image: url(https://images.unsplash.com/photo-1536227661368-deef57acf708?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);">
+        </div>
+        <div class="carousel-item carousel-item-height"
+            style="background-image: url(https://images.unsplash.com/photo-1525193612562-0ec53b0e5d7c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<!-- 店家資訊 -->
+<div class="shop-info bg-light">
+    <div class="container pt-5">
+        <h2 class="text-brown text-center">世界最棒咖啡館</h2>
+        <div class="row p-5 border-bottom">
+            <div class="col-5 shop-info-pic"
+                style="background-image: url(https://images.unsplash.com/photo-1529022805552-1c88a713c1c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=625&q=80);">
+            </div>
+            <div class="col-7 px-4 d-flex flex-column">
+                <p class="text-lightBrown mb-0">Industrial style cafe</p>
+                <h2 class="text-brown mb-4">沉穩的午後時光 </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptatum. Ea mollitia facere,
+                    illum et ipsam id dolorum nulla? Consectetur adipisci enim sed illo facilis unde alias maiores
+                    doloribus iure nesciunt, repudiandae aperiam quibusdam obcaecati tempora, assumenda eum quod
+                    voluptatum molestias provident ea repellendus! Sapiente consequuntur expedita totam tenetur
+                    excepturi.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum libero, ut perspiciatis voluptate
+                    voluptatibus voluptas dolores consequuntur officia quisquam similique aliquam veritatis itaque
+                    distinctio blanditiis nesciunt unde minus quo at commodi error? Numquam amet veritatis atque id
+                    suscipit totam, ipsa ducimus, laborum, iste ad ut a fugit ex eius temporibus.</p>
+                <div class="align-self-end">
+                    <a href="#" class="btn btn-brown d-inline-block px-5 btn-hover">MORE</a>
+                </div>
+            </div>
+        </div>
+        <div class="row p-5">
+            <div class="col-7 px-4 d-flex flex-column">
+                <p class="text-lightBrown mb-0">World Barista Championship</p>
+                <h2 class="text-brown mb-4">五星咖啡師</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptatum. Ea mollitia facere,
+                    illum et ipsam id dolorum nulla? Consectetur adipisci enim sed illo facilis unde alias maiores
+                    doloribus iure nesciunt, repudiandae aperiam quibusdam obcaecati tempora, assumenda eum quod
+                    voluptatum molestias provident ea repellendus! Sapiente consequuntur expedita totam tenetur
+                    excepturi.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum libero, ut perspiciatis voluptate
+                    voluptatibus voluptas dolores consequuntur officia quisquam similique aliquam veritatis itaque
+                    distinctio blanditiis nesciunt unde minus quo at commodi error? Numquam amet veritatis atque id
+                    suscipit totam, ipsa ducimus, laborum, iste ad ut a fugit ex eius temporibus.</p>
+                <div>
+                    <a href="#" class="btn btn-brown d-inline-block px-5 btn-hover">MORE</a>
+                </div>
+            </div>
+            <div class="col-5 shop-info-pic"
+                style="background-image: url(https://images.unsplash.com/photo-1507226983735-a838615193b0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 最新消息 -->
+<div class="blog-info bg-light pb-5">
+    <div class="container pt-5">
+        <h2 class="text-brown text-center">最新消息</h2>
+        <div class="row p-5">
+            <div class="col-4">
+                <div class="card border-0 card-shadow text-center">
+                    <div class="card-img-top card-img-height"
+                        style="background-image: url(https://images.unsplash.com/photo-1621188988909-fbef0a88dc04?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80);">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-lightBrown btn-hover">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card border-0 card-shadow text-center">
+                    <div class="card-img-top card-img-height"
+                        style="background-image: url(https://images.unsplash.com/photo-1532635241-17e820acc59f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=703&q=80);">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-lightBrown btn-hover">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card border-0 card-shadow text-center">
+                    <div class="card-img-top card-img-height"
+                        style="background-image: url(https://images.unsplash.com/photo-1609475349547-644d546313f6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=80);">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-lightBrown btn-hover">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row px-5">
+            <div class="col-sm-6">
+                <div class="card bg-lightBrown text-white">
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-brown text-white btn-hover">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card bg-lightBrown text-white">
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-brown text-white btn-hover">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 顧客推薦 -->
+<div class="custer-comment"
+    style="background-image: url(https://images.unsplash.com/photo-1578632321628-55551b185e57?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);">
+    <div class="container pt-5">
+        <h2 class="text-white text-center">名人推薦</h2>
+        <div class="row p-5 m-0">
+            <div class="col-4 px-3">
+                <div class="card f-flex flex-column justify-content-center align-items-center p-4 card-height-hover">
+                    <div class="card-img-circle"
+                        style="background-image: url(https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);">
+                    </div>
+                    <div class="card-body">
+                        <div class="customer d-flex align-items-end mb-2">
+                            <h3 class="m-0 me-2 text-brown">LISA</h3>
+                            <p class="m-0 text-coffee">Food blogger</p>
+                        </div>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, laudantium
+                            aspernatur iste omnis esse officia qui dolor labore sapiente praesentium nam voluptatem unde
+                            rerum dignissimos ipsam perspiciatis, quia fuga? Quaerat ipsam repellat voluptatum libero,
+                            maxime, cum id excepturi unde voluptatem harum voluptates, aut accusantium laudantium
+                            tempora
+                            eveniet amet rem dicta!</p>
+                    </div>
+                    <div class="card-footer w-100 bg-white pt-3">
+                        <div class="star d-flex align-items-center justify-content-between">
+                            <h5 class="m-0 text-coffee">推薦指數</h5>
+                            <div class="icon">
+                                <i class="fas fa-star text-coffee"></i>
+                                <i class="fas fa-star text-coffee"></i>
+                                <i class="fas fa-star text-coffee"></i>
+                                <i class="fas fa-star text-coffee"></i>
+                                <i class="far fa-star text-coffee"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 px-3">
+                <div class="card f-flex flex-column justify-content-center align-items-center p-4 card-height-hover">
+                    <div class="card-img-circle"
+                        style="background-image: url(https://images.unsplash.com/photo-1519721782138-5de3d68a2b32?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80);">
+                    </div>
+                    <div class="card-body">
+                        <div class="customer d-flex align-items-end mb-2">
+                            <h3 class="m-0 me-2 text-brown">ROSE</h3>
+                            <p class="m-0 text-coffee">Food blogger</p>
+                        </div>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, laudantium
+                            aspernatur iste omnis esse officia qui dolor labore sapiente praesentium nam voluptatem unde
+                            rerum dignissimos ipsam perspiciatis, quia fuga? Quaerat ipsam repellat voluptatum libero,
+                            maxime, cum id excepturi unde voluptatem harum voluptates, aut accusantium laudantium
+                            tempora
+                            eveniet amet rem dicta!</p>
+                    </div>
+                    <div class="card-footer w-100 bg-white pt-3">
+                        <div class="star d-flex align-items-center justify-content-between">
+                            <h5 class="m-0 text-coffee">推薦指數</h5>
+                            <div class="icon">
+                                <i class="fas fa-star text-coffee"></i>
+                                <i class="fas fa-star text-coffee"></i>
+                                <i class="fas fa-star text-coffee"></i>
+                                <i class="fas fa-star text-coffee"></i>
+                                <i class="far fa-star text-coffee"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 px-3">
+                <div class="card f-flex flex-column justify-content-center align-items-center p-4 card-height-hover">
+                    <div class="card-img-circle"
+                        style="background-image: url(https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80);">
+                    </div>
+                    <div class="card-body">
+                        <div class="customer d-flex align-items-end mb-2">
+                            <h3 class="m-0 me-2 text-brown">ANDY</h3>
+                            <p class="m-0 text-coffee">Food blogger</p>
+                        </div>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, laudantium
+                            aspernatur iste omnis esse officia qui dolor labore sapiente praesentium nam voluptatem unde
+                            rerum dignissimos ipsam perspiciatis, quia fuga? Quaerat ipsam repellat voluptatum libero,
+                            maxime, cum id excepturi unde voluptatem harum voluptates, aut accusantium laudantium
+                            tempora
+                            eveniet amet rem dicta!</p>
+                    </div>
+                    <div class="card-footer w-100 bg-white pt-3">
+                        <div class="star d-flex align-items-center justify-content-between">
+                            <h5 class="m-0 text-coffee">推薦指數</h5>
+                            <div class="icon">
+                                <i class="fas fa-star text-coffee"></i>
+                                <i class="fas fa-star text-coffee"></i>
+                                <i class="fas fa-star text-coffee"></i>
+                                <i class="fas fa-star text-coffee"></i>
+                                <i class="far fa-star text-coffee"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
