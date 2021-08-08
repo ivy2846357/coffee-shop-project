@@ -3,16 +3,24 @@
     background-position: center center;
 }
 
+@mixin bg-dark{
+    background-color: rgba(0, 0, 0, .6);
+    background-blend-mode: multiply;
+}
+
+//首頁Banner
 .carousel-item-height{
   height: 600px;
   @include bg-cover;
 }
 
+//店家資訊照片
 .shop-info-pic{
     height: 400px;
     @include bg-cover;
 }
 
+//標題底線
 .title-border{
     position: relative;
     &::after{
@@ -27,6 +35,7 @@
     }
 }
 
+//按鈕滑入效果
 .btn-hover{
     transition: all .3s;
 
@@ -35,11 +44,13 @@
     }
 }
 
+//最新消息照片
 .card-img-height{
     height: 300px;
     @include bg-cover;
 }
 
+//卡片滑入效果
 .card-shadow{
     transition: all .3s;
 
@@ -48,12 +59,18 @@
     }
 }
 
+.discount-card{
+    @include bg-cover;
+    @include bg-dark;
+}
+
+//顧客推薦bg
 .custer-comment{
-    background-color: rgba(0, 0, 0, .6);
-    background-blend-mode: multiply;
+    @include bg-dark;
     @include bg-cover;
 }
 
+//名人照片
 .card-img-circle{
     width: 150px;
     height: 150px;
@@ -64,6 +81,7 @@
     @include bg-cover;
 }
 
+//顧客推薦-卡片滑入效果
 .card-height-hover{
     transition: all .3s;
 
@@ -72,17 +90,18 @@
     }
 }
 
+//訂位資訊背景
 .booking-form{
     background-color: rgba(255, 255, 255, .8);
     background-blend-mode: screen;
     @include bg-cover;
 }
 
+//表單樣式修改
 .form-check-input:checked{
     background-color: #D79771;
     border-color: #D79771;
 }
-
 .form-check-input:focus,
 .form-control:focus{
     box-shadow:0 0 0 0.25rem #FFEBC9;
