@@ -12055,6 +12055,10 @@ a {
   text-decoration: none;
 }
 
+textarea {
+  resize: none;
+}
+
 .carousel-item-height {
   height: 600px;
   background-size: cover;
@@ -12235,6 +12239,11 @@ a {
   -webkit-transition: opacity .3s, visibility 0s;
   -o-transition: opacity .3s, visibility 0s;
   transition: opacity .3s, visibility 0s;
+}
+
+.contact-btn {
+  display: inline-block;
+  margin: 0 10px;
 }
 
 /*# sourceMappingURL=all.css.map */
