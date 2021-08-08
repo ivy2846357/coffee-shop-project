@@ -12166,4 +12166,11 @@ a {
   border-color: transparent;
 }
 
+.shop-img {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center center;
+}
+
 /*# sourceMappingURL=all.css.map */
