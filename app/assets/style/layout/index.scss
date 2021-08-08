@@ -1,34 +1,35 @@
-@mixin bg-cover{
+@mixin bg-cover {
     background-size: cover;
     background-position: center center;
 }
 
-@mixin bg-dark{
+@mixin bg-dark {
     background-color: rgba(0, 0, 0, .6);
     background-blend-mode: multiply;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
 //首頁Banner
-.carousel-item-height{
-  height: 600px;
-  @include bg-cover;
+.carousel-item-height {
+    height: 600px;
+    @include bg-cover;
 }
 
 //店家資訊照片
-.shop-info-pic{
+.shop-info-pic {
     height: 400px;
     @include bg-cover;
 }
 
 //標題底線
-.title-border{
+.title-border {
     position: relative;
-    &::after{
-        content:'';
+
+    &::after {
+        content: '';
         position: absolute;
         width: 100px;
         height: 5px;
@@ -40,42 +41,47 @@ a{
 }
 
 //按鈕滑入效果
-.btn-hover{
+.btn-hover {
     transition: all .3s;
 
-    &:hover{
+    &:hover {
         letter-spacing: 3px;
     }
 }
 
 //最新消息照片
-.card-img-height{
+.card-img-height {
     height: 300px;
     @include bg-cover;
 }
 
+.title-word {
+    text-align: center;
+    width: 85%;
+}
+
 //卡片滑入效果
-.card-shadow{
+.card-shadow {
     transition: all .3s;
 
-    &:hover{
+    &:hover {
         box-shadow: 1px 3px 6px #BBB;
     }
 }
 
-.discount-card{
+.discount-card {
     @include bg-cover;
     @include bg-dark;
 }
 
 //顧客推薦bg
-.custer-comment{
+.custer-comment {
     @include bg-dark;
     @include bg-cover;
 }
 
 //名人照片
-.card-img-circle{
+.card-img-circle {
     width: 150px;
     height: 150px;
     border: 1px solid transparent;
@@ -86,54 +92,63 @@ a{
 }
 
 //顧客推薦-卡片滑入效果
-.card-height-hover{
+.card-height-hover {
     transition: all .3s;
 
-    &:hover{
+    &:hover {
         transform: translateY(-20px);
     }
 }
 
 //訂位資訊背景
-.booking-form{
+.booking-form {
     background-color: rgba(255, 255, 255, .8);
     background-blend-mode: screen;
     @include bg-cover;
 }
 
 //表單樣式修改
-.form-check-input:checked{
+.form-check-input:checked {
     background-color: #D79771;
     border-color: #D79771;
 }
+
 .form-check-input:focus,
-.form-control:focus{
-    box-shadow:0 0 0 0.25rem #FFEBC9;
+.form-control:focus {
+    box-shadow: 0 0 0 0.25rem #FFEBC9;
     border-color: transparent;
 }
 
-.shop-img{
+.shop-img {
     width: 100%;
     height: 300px;
     @include bg-cover;
 }
 
-.news{
-    .img-box{
+.news {
+    .img-box {
         transition: all .3s;
         height: 400px;
+        background-color: rgba(0, 0, 0, 0);
+        background-blend-mode: multiply;
         @include bg-cover;
 
-        &:hover{
+        &:hover {
             @include bg-dark;
         }
 
-        &:hover .news-img-btn{
-            display: block;
+        .news-img-btn {
+            // display: none;
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity .3s, visibility 0s .3s;
         }
 
-        .news-img-btn{
-            display: none;
+        &:hover .news-img-btn {
+            visibility: visible;
+            opacity: 1;
+            // display: block;
+            transition: opacity .3s, visibility 0s;
         }
     }
 }
