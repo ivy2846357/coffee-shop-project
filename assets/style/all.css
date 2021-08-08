@@ -12246,4 +12246,16 @@ textarea {
   margin: 0 10px;
 }
 
+.article-img {
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.previous a:hover,
+.next a:hover {
+  color: #D79771;
+}
+
 /*# sourceMappingURL=all.css.map */
