@@ -119,12 +119,37 @@ a {
     border-color: transparent;
 }
 
+//門市資訊-店內照片
 .shop-img {
     width: 100%;
     height: 300px;
-    @include bg-cover;
+    background-position: center center;
+    background-size: 180%;
+
+    transition: all .3s;
+    background-color: rgba(0, 0, 0, 0);
+    background-blend-mode: multiply;
+
+    &:hover {
+        @include bg-dark;
+        background-size: 210%;
+    }
+
+    .map-word {
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity .3s, visibility .3s;
+    }
+
+    &:hover .map-word {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity .3s, visibility .3s 0s;
+    }
+
 }
 
+//最新消息-圖片漸暗效果
 .news {
     .img-box {
         transition: all .3s;
@@ -138,7 +163,6 @@ a {
         }
 
         .news-img-btn {
-            // display: none;
             visibility: hidden;
             opacity: 0;
             transition: opacity .3s, visibility 0s .3s;
@@ -147,7 +171,6 @@ a {
         &:hover .news-img-btn {
             visibility: visible;
             opacity: 1;
-            // display: block;
             transition: opacity .3s, visibility 0s;
         }
     }
