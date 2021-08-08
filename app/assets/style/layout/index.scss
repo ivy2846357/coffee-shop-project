@@ -12,6 +12,10 @@ a {
     text-decoration: none;
 }
 
+textarea {
+    resize: none;
+}
+
 //首頁Banner
 .carousel-item-height {
     height: 600px;
@@ -174,4 +178,9 @@ a {
             transition: opacity .3s, visibility 0s;
         }
     }
+}
+
+.contact-btn {
+    display: inline-block;
+    margin: 0 10px;
 }
