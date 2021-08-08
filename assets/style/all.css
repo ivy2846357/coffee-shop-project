@@ -12051,6 +12051,10 @@ fieldset:disabled .btn {
   }
 }
 
+a {
+  text-decoration: none;
+}
+
 .carousel-item-height {
   height: 600px;
   background-size: cover;
