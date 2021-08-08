@@ -111,3 +111,9 @@ a{
     box-shadow:0 0 0 0.25rem #FFEBC9;
     border-color: transparent;
 }
+
+.shop-img{
+    width: 100%;
+    height: 300px;
+    @include bg-cover;
+}
