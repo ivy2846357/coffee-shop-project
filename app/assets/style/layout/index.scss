@@ -117,3 +117,23 @@ a{
     height: 300px;
     @include bg-cover;
 }
+
+.news{
+    .img-box{
+        transition: all .3s;
+        height: 400px;
+        @include bg-cover;
+
+        &:hover{
+            @include bg-dark;
+        }
+
+        &:hover .news-img-btn{
+            display: block;
+        }
+
+        .news-img-btn{
+            display: none;
+        }
+    }
+}
