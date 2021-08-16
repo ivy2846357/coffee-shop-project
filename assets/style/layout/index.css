@@ -205,4 +205,14 @@ textarea {
   color: #D79771;
 }
 
+.icon-hover {
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.icon-hover:hover {
+  background-color: #FFEBC9;
+}
+
 /*# sourceMappingURL=index.css.map */
