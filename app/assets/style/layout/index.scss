@@ -200,3 +200,11 @@ textarea {
         color: #D79771;
     }
 }
+
+.icon-hover {
+    transition: all .3s;
+
+    &:hover {
+        background-color: #FFEBC9;
+    }
+}
