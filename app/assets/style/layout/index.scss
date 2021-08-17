@@ -201,10 +201,16 @@ textarea {
     }
 }
 
+//footer icon hover 效果
 .icon-hover {
     transition: all .3s;
 
     &:hover {
         background-color: #FFEBC9;
     }
+}
+
+//企業合作logo
+.company-logo {
+    width: 80%;
 }

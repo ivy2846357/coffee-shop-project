@@ -7,11 +7,43 @@ current: index
 
 <div class="contact my-5">
     <div class="container">
-        <div class="d-flex flex-column align-items-center border-bottom pb-3">
+        <div class="d-flex flex-column justify-content-center align-items-center border-bottom pb-3">
             <h2 class="text-brown title-border my-5">企業合作</h2>
             <small class="text-black-50 title-word w-75">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum
                 dolor aliquid nesciunt voluptatum saepe ratione architecto voluptates sunt, voluptas, sint cupiditate
                 doloremque praesentium non accusantium?</small>
+            <ul class="d-flex justify-content-center align-items-cente list-unstyled mt-4 flex-wrap">
+                <li class="d-flex justify-content-center">
+                    <img src="./assets/images/logo-1.svg" class="company-logo" alt="logo">
+                </li>
+                <li class="d-flex justify-content-center">
+                    <img src="./assets/images/logo-2.svg" class="company-logo" alt="logo">
+                </li>
+                <li class="d-flex justify-content-center">
+                    <img src="./assets/images/logo-3.svg" class="company-logo" alt="logo">
+                </li>
+                <li class="d-flex justify-content-center">
+                    <img src="./assets/images/logo-4.svg" class="company-logo" alt="logo">
+                </li>
+                <li class="d-flex justify-content-center">
+                    <img src="./assets/images/logo-5.svg" class="company-logo d-none d-lg-block" alt="logo">
+                </li>
+                <li class="d-flex justify-content-center">
+                    <img src="./assets/images/logo-6.svg" class="company-logo d-none d-lg-block" alt="logo">
+                </li>
+                <li class="d-flex justify-content-center">
+                    <img src="./assets/images/logo-7.svg" class="company-logo d-none d-lg-block" alt="logo">
+                </li>
+                <li class="d-flex justify-content-center">
+                    <img src="./assets/images/logo-8.svg" class="company-logo d-none d-lg-block" alt="logo">
+                </li>
+                <li class="d-flex justify-content-center">
+                    <img src="./assets/images/logo-9.svg" class="company-logo d-none d-lg-block" alt="logo">
+                </li>
+                <li class="d-flex justify-content-center">
+                    <img src="./assets/images/logo-10.svg" class="company-logo d-none d-lg-block" alt="logo">
+                </li>
+            </ul>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.5967898920144!2d121.51393561484213!3d25.04775413396587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc34a31ce3a4abecb!2z6Ie65YyX6LuK56uZ!5e0!3m2!1szh-TW!2stw!4v1628408968179!5m2!1szh-TW!2stw"
                 width="90%" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="my-4"></iframe>
@@ -29,25 +61,26 @@ current: index
                 doloremque praesentium non accusantium?</small>
         </div>
         <div>
-            <form class="row">
-                <div class="col-lg-6">
+            <form class="row d-flex justify-content-center needs-validation" novalidate>
+                <div class="col-lg-8">
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">姓名</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            required>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">連絡電話</label>
-                        <input type="number" class="form-control" id="exampleInputPassword1">
+                        <input type="text" class="form-control" id="exampleInputPassword1" required>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">電子信箱</label>
-                        <input type="email" class="form-control" id="exampleInputPassword1">
+                        <input type="email" class="form-control" id="exampleInputPassword1" required>
                     </div>
                     <div class="mb-3">
                         <label for="inlineRadio1" class="form-label me-3">性別</label>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                                value="option1">
+                                value="option1" checked>
                             <label class="form-check-label" for="inlineRadio1">男性</label>
                         </div>
                         <div class="form-check form-check-inline">
@@ -56,11 +89,9 @@ current: index
                             <label class="form-check-label" for="inlineRadio2">女性</label>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6">
                     <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">意見回饋</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="8" placeholder="請輸入您的意見"
+                            required></textarea>
                     </div>
                 </div>
                 <div class="d-flex justify-content-center">
