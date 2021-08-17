@@ -214,3 +214,17 @@ textarea {
 .company-logo {
     width: 80%;
 }
+
+//關於我們
+.about {
+    .img-box {
+        height: 400px;
+        background-color: #000;
+
+        @include bg-cover;
+    }
+
+    i {
+        font-size: 5rem;
+    }
+}
