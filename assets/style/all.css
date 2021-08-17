@@ -12272,4 +12272,15 @@ textarea {
   width: 80%;
 }
 
+.about .img-box {
+  height: 400px;
+  background-color: #000;
+  background-size: cover;
+  background-position: center center;
+}
+
+.about i {
+  font-size: 5rem;
+}
+
 /*# sourceMappingURL=all.css.map */
