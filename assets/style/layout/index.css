@@ -221,13 +221,22 @@ textarea {
 
 .about .img-box {
   height: 400px;
-  background-color: #000;
   background-size: cover;
   background-position: center center;
 }
 
 .about i {
   font-size: 5rem;
+}
+
+.coffee .coffee-list .img-box {
+  height: 300px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.coffee .coffee-list .menu td {
+  text-align: center;
 }
 
 /*# sourceMappingURL=index.css.map */
