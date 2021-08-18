@@ -219,12 +219,26 @@ textarea {
 .about {
     .img-box {
         height: 400px;
-        background-color: #000;
-
         @include bg-cover;
     }
 
     i {
         font-size: 5rem;
+    }
+}
+
+//咖啡商品列表圖片
+.coffee {
+    .coffee-list {
+        .img-box {
+            height: 300px;
+            @include bg-cover;
+        }
+
+        .menu {
+            td {
+                text-align: center;
+            }
+        }
     }
 }
