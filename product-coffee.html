@@ -59,7 +59,7 @@
 
   
 <div class="coffee my-5">
-    <div class="container">
+    <div class="container-md">
         <div class="d-flex flex-column text-center align-items-center mb-4">
             <h2 class="text-brown title-border my-5">咖啡飲品</h2>
             <small class="text-black-50 title-word w-75">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum
@@ -68,8 +68,8 @@
         </div>
         <div role="tabpanel" class="coffee-list my-5">
             <!-- List group -->
-            <div class="container mb-5">
-                <div class="list-group list-group-horizontal mb-4 text-center" id="myList" role="tablist">
+            <div class="container-md mb-5">
+                <div class="list-group list-group-horizontal-md mb-4 text-center" id="myList" role="tablist">
                     <a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#home"
                         role="tab">新鮮現烘</a>
                     <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#profile"
@@ -82,21 +82,21 @@
             </div>
 
             <!-- Tab panes -->
-            <div class="tab-content container">
+            <div class="tab-content container-md">
                 <div class="tab-pane fade show active" id="home" role="tabpanel">
                     <div class="row d-flex justify-content-center">
-                        <div class="col-4">
+                        <div class="col-lg-4">
                             <div class="img-box"
                                 style="background-image: url(https://images.unsplash.com/photo-1460865332492-81fd69fc5996?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);">
                             </div>
-                            <ul class="my-2 text-black-50">
+                            <ul class="my-lg-2 my-3 text-black-50">
                                 <li>現烘焙咖啡皆以義式咖啡豆製作</li>
                                 <li>產地：哥倫比亞、衣索比亞、巴西、薩爾瓦多、尼加拉瓜</li>
                                 <li>咖啡因總含量均為：100~200mg<br>大杯卡布奇諾為 200~300mg</li>
                                 <li>百貨/商場 門市不適用下述售價</li>
                             </ul>
                         </div>
-                        <div class="col-8">
+                        <div class="col-lg-8">
                             <table class="table table-hover menu">
                                 <thead>
                                     <tr>
@@ -104,141 +104,176 @@
                                         <th scope="col" width="8%" class="text-center">S</th>
                                         <th scope="col" width="8%" class="text-center">M</th>
                                         <th scope="col" width="8%" class="text-center">L</th>
-                                        <th scope="col" width="18%"></th>
+                                        <th scope="col" width="30%"></th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <th scope="row">
-                                            經典黑咖啡 Americano
-                                            <span class="badge bg-danger m-1">HOT</span>
-                                            <span class="badge bg-info m-1">COLD</span>
+                                            經典黑咖啡<span
+                                                class="d-none d-md-inline-block ms-2 text-black-50 fs-7">Americano</span>
+                                            <div class="drink">
+                                                <span class="badge bg-danger m-1">HOT</span>
+                                                <span class="badge bg-info m-1">COLD</span>
+                                            </div>
                                         </th>
-                                        <td>$45</td>
-                                        <td>$55</td>
-                                        <td>$65</td>
-                                        <td>
+                                        <td class="align-middle">$45</td>
+                                        <td class="align-middle">$55</td>
+                                        <td class="align-middle">$65</td>
+                                        <td class="align-middle">
                                             <a href="#" class="btn btn-lightBrown text-white btn-sm">咖啡介紹<i
                                                     class="fas fa-arrow-circle-right text-white ms-2"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <th scope="row">
-                                            濃縮咖啡 Single Espresso
-                                            <span class="badge bg-danger m-1">HOT</span>
+                                            濃縮咖啡<span class="d-none d-md-inline-block ms-2 text-black-50 fs-7">Single
+                                                Espresso</span>
+                                            <div class="drink">
+                                                <span class="badge bg-danger m-1">HOT</span>
+                                            </div>
                                         </th>
-                                        <td>$45</td>
-                                        <td>$55</td>
-                                        <td>$65</td>
-                                        <td>
+                                        <td class="align-middle">$45</td>
+                                        <td class="align-middle">$55</td>
+                                        <td class="align-middle">$65</td>
+                                        <td class="align-middle">
                                             <a href="#" class="btn btn-lightBrown text-white btn-sm">咖啡介紹<i
                                                     class="fas fa-arrow-circle-right text-white ms-2"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <th scope="row">
-                                            特調咖啡 Flavored Coffee
-                                            <span class="badge bg-danger m-1">HOT</span>
-                                            <span class="badge bg-info m-1">COLD</span>
+                                            特調咖啡<span class="d-none d-md-inline-block ms-2 text-black-50 fs-7">Flavored
+                                                Coffee</span>
+                                            <div class="drink">
+                                                <span class="badge bg-danger m-1">HOT</span>
+                                                <span class="badge bg-info m-1">COLD</span>
+                                            </div>
                                         </th>
-                                        <td>$45</td>
-                                        <td>$55</td>
-                                        <td>$65</td>
-                                        <td>
+                                        <td class="align-middle">$45</td>
+                                        <td class="align-middle">$55</td>
+                                        <td class="align-middle">$65</td>
+                                        <td class="align-middle">
                                             <a href="#" class="btn btn-lightBrown text-white btn-sm">咖啡介紹<i
                                                     class="fas fa-arrow-circle-right text-white ms-2"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <th scope="row">
-                                            卡布奇諾 Cappuccino
-                                            <span class="badge bg-danger m-1">HOT</span>
-                                            <span class="badge bg-info m-1">COLD</span>
+                                            卡布奇諾<span
+                                                class="d-none d-md-inline-block ms-2 text-black-50 fs-7">Cappuccino</span>
+                                            <div class="drink">
+                                                <span class="badge bg-danger m-1">HOT</span>
+                                                <span class="badge bg-info m-1">COLD</span>
+                                            </div>
                                         </th>
-                                        <td>$45</td>
-                                        <td>$55</td>
-                                        <td>$65</td>
-                                        <td>
+                                        <td class="align-middle">$45</td>
+                                        <td class="align-middle">$55</td>
+                                        <td class="align-middle">$65</td>
+                                        <td class="align-middle">
                                             <a href="#" class="btn btn-lightBrown text-white btn-sm">咖啡介紹<i
                                                     class="fas fa-arrow-circle-right text-white ms-2"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <th scope="row">
-                                            經典拿鐵 Latte
-                                            <span class="badge bg-danger m-1">HOT</span>
+                                            經典拿鐵<span
+                                                class="d-none d-md-inline-block ms-2 text-black-50 fs-7">Latte</span>
+                                            <div class="drink">
+                                                <span class="badge bg-danger m-1">HOT</span>
+                                            </div>
                                         </th>
-                                        <td>$45</td>
-                                        <td>$55</td>
-                                        <td>$65</td>
-                                        <td>
+                                        <td class="align-middle">$45</td>
+                                        <td class="align-middle">$55</td>
+                                        <td class="align-middle">$65</td>
+                                        <td class="align-middle">
                                             <a href="#" class="btn btn-lightBrown text-white btn-sm">咖啡介紹<i
                                                     class="fas fa-arrow-circle-right text-white ms-2"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <th scope="row">
-                                            靜岡抹茶小農拿鐵 Matcha Coffee Latte
-                                            <span class="badge bg-info m-1">COLD</span>
+                                            靜岡抹茶小農拿鐵<span
+                                                class="d-none d-md-inline-block ms-2 text-black-50 fs-7">Matcha
+                                                Coffee
+                                                Latte</span>
+                                            <div class="drink">
+                                                <span class="badge bg-info m-1">COLD</span>
+                                            </div>
                                         </th>
-                                        <td>$45</td>
-                                        <td>$55</td>
-                                        <td>$65</td>
-                                        <td>
+                                        <td class="align-middle">$45</td>
+                                        <td class="align-middle">$55</td>
+                                        <td class="align-middle">$65</td>
+                                        <td class="align-middle">
                                             <a href="#" class="btn btn-lightBrown text-white btn-sm">咖啡介紹<i
                                                     class="fas fa-arrow-circle-right text-white ms-2"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <th scope="row">
-                                            蜂蜜拿鐵 Honey Latte
-                                            <span class="badge bg-danger m-1">HOT</span>
+                                            蜂蜜拿鐵<span class="d-none d-md-inline-block ms-2 text-black-50 fs-7">Honey
+                                                Latte</span>
+                                            <div class="drink">
+                                                <span class="badge bg-danger m-1">HOT</span>
+                                            </div>
                                         </th>
-                                        <td>$45</td>
-                                        <td>$55</td>
-                                        <td>$65</td>
-                                        <td>
+                                        <td class="align-middle">$45</td>
+                                        <td class="align-middle">$55</td>
+                                        <td class="align-middle">$65</td>
+                                        <td class="align-middle">
                                             <a href="#" class="btn btn-lightBrown text-white btn-sm">咖啡介紹<i
                                                     class="fas fa-arrow-circle-right text-white ms-2"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <th scope="row">
-                                            海鹽焦糖拿鐵 Salted Caramel Latte
-                                            <span class="badge bg-danger m-1">HOT</span>
+                                            海鹽焦糖拿鐵<span class="d-none d-md-inline-block ms-2 text-black-50 fs-7">Salted
+                                                Caramel
+                                                Latte</span>
+                                            <div class="drink">
+                                                <span class="badge bg-danger m-1">HOT</span>
+                                            </div>
                                         </th>
-                                        <td>$45</td>
-                                        <td>$55</td>
-                                        <td>$65</td>
-                                        <td>
+                                        <td class="align-middle">$45</td>
+                                        <td class="align-middle">$55</td>
+                                        <td class="align-middle">$65</td>
+                                        <td class="align-middle">
                                             <a href="#" class="btn btn-lightBrown text-white btn-sm">咖啡介紹<i
                                                     class="fas fa-arrow-circle-right text-white ms-2"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <th scope="row">
-                                            黑絲絨拿鐵 Latte with Coffee Jelly
-                                            <span class="badge bg-danger m-1">HOT</span>
-                                            <span class="badge bg-info m-1">COLD</span>
+                                            黑絲絨拿鐵<span class="d-none d-md-inline-block ms-2 text-black-50 fs-7">Latte
+                                                with
+                                                Coffee
+                                                Jelly</span>
+                                            <div class="drink">
+                                                <span class="badge bg-danger m-1">HOT</span>
+                                                <span class="badge bg-info m-1">COLD</span>
+                                            </div>
                                         </th>
-                                        <td>$45</td>
-                                        <td>$55</td>
-                                        <td>$65</td>
-                                        <td>
+                                        <td class="align-middle">$45</td>
+                                        <td class="align-middle">$55</td>
+                                        <td class="align-middle">$65</td>
+                                        <td class="align-middle">
                                             <a href="#" class="btn btn-lightBrown text-white btn-sm">咖啡介紹<i
                                                     class="fas fa-arrow-circle-right text-white ms-2"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <th scope="row">
-                                            焦糖瑪琪朵 Caramel Macchiato
-                                            <span class="badge bg-danger m-1">HOT</span>
-                                            <span class="badge bg-info m-1">COLD</span>
+                                            焦糖瑪琪朵<span class="d-none d-md-inline-block ms-2 text-black-50 fs-7">Caramel
+                                                Macchiato</span>
+                                            <div class="drink">
+                                                <span class="badge bg-danger m-1">HOT</span>
+                                                <span class="badge bg-info m-1">COLD</span>
+                                            </div>
                                         </th>
-                                        <td>$45</td>
-                                        <td>$55</td>
-                                        <td>$65</td>
-                                        <td>
+                                        <td class="align-middle">$45</td>
+                                        <td class="align-middle">$55</td>
+                                        <td class="align-middle">$65</td>
+                                        <td class="align-middle">
                                             <a href="#" class="btn btn-lightBrown text-white btn-sm">咖啡介紹<i
                                                     class="fas fa-arrow-circle-right text-white ms-2"></i></a>
                                         </td>
@@ -250,11 +285,11 @@
                 </div>
                 <div class="tab-pane fade" id="profile" role="tabpanel">
                     <div class="row d-flex justify-content-center">
-                        <div class="col-4">
+                        <div class="col-lg-4">
                             <div class="img-box"
                                 style="background-image: url(https://images.unsplash.com/photo-1442512595331-e89e73853f31?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);">
                             </div>
-                            <ul class="my-2 text-black-50">
+                            <ul class="my-lg-2 my-3 text-black-50">
                                 <li>榮獲澳洲AICA咖啡評鑑銅獎</li>
                                 <li>榮獲COFFEE REVIEW國際評鑑92分</li>
                                 <li>手沖咖啡均無額外添加砂糖</li>
@@ -262,7 +297,7 @@
                                 <li>百貨/商場 門市不適用下述售價</li>
                             </ul>
                         </div>
-                        <div class="col-8">
+                        <div class="col-lg-8">
                             <table class="table table-hover menu">
                                 <thead>
                                     <tr>
@@ -270,87 +305,107 @@
                                         <th scope="col" width="8%" class="text-center">S</th>
                                         <th scope="col" width="8%" class="text-center">M</th>
                                         <th scope="col" width="8%" class="text-center">L</th>
-                                        <th scope="col" width="18%"></th>
+                                        <th scope="col" width="30%"></th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <th scope="row">
-                                            哥倫翡玉精品 Green Jade Specialty
-                                            <span class="badge bg-danger m-1">HOT</span>
-                                            <span class="badge bg-info m-1">COLD</span>
+                                            哥倫翡玉精品<span class="d-none d-md-inline-block ms-2 text-black-50 fs-7">Green
+                                                Jade
+                                                Specialty</span>
+                                            <div class="drink">
+                                                <span class="badge bg-danger m-1">HOT</span>
+                                                <span class="badge bg-info m-1">COLD</span>
+                                            </div>
                                         </th>
-                                        <td>$45</td>
-                                        <td>$55</td>
-                                        <td>$65</td>
-                                        <td>
+                                        <td class="align-middle">$45</td>
+                                        <td class="align-middle">$55</td>
+                                        <td class="align-middle">$65</td>
+                                        <td class="align-middle">
                                             <a href="#" class="btn btn-lightBrown text-white btn-sm">咖啡介紹<i
                                                     class="fas fa-arrow-circle-right text-white ms-2"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <th scope="row">
-                                            百蜜花園 Sweet Blossom
-                                            <span class="badge bg-danger m-1">HOT</span>
+                                            百蜜花園<span class="d-none d-md-inline-block ms-2 text-black-50 fs-7">Sweet
+                                                Blossom</span>
+                                            <div class="drink">
+                                                <span class="badge bg-danger m-1">HOT</span>
+                                            </div>
                                         </th>
-                                        <td>$45</td>
-                                        <td>$55</td>
-                                        <td>$65</td>
-                                        <td>
+                                        <td class="align-middle">$45</td>
+                                        <td class="align-middle">$55</td>
+                                        <td class="align-middle">$65</td>
+                                        <td class="align-middle">
                                             <a href="#" class="btn btn-lightBrown text-white btn-sm">咖啡介紹<i
                                                     class="fas fa-arrow-circle-right text-white ms-2"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <th scope="row">
-                                            花香耶加雪菲 Floral Yirgacheffe
-                                            <span class="badge bg-danger m-1">HOT</span>
-                                            <span class="badge bg-info m-1">COLD</span>
+                                            花香耶加雪菲<span class="d-none d-md-inline-block ms-2 text-black-50 fs-7">Floral
+                                                Yirgacheffe</span>
+                                            <div class="drink">
+                                                <span class="badge bg-danger m-1">HOT</span>
+                                                <span class="badge bg-info m-1">COLD</span>
+                                            </div>
                                         </th>
-                                        <td>$45</td>
-                                        <td>$55</td>
-                                        <td>$65</td>
-                                        <td>
+                                        <td class="align-middle">$45</td>
+                                        <td class="align-middle">$55</td>
+                                        <td class="align-middle">$65</td>
+                                        <td class="align-middle">
                                             <a href="#" class="btn btn-lightBrown text-white btn-sm">咖啡介紹<i
                                                     class="fas fa-arrow-circle-right text-white ms-2"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <th scope="row">
-                                            黃金曼巴 Golden Mandheling
-                                            <span class="badge bg-danger m-1">HOT</span>
-                                            <span class="badge bg-info m-1">COLD</span>
+                                            黃金曼巴<span class="d-none d-md-inline-block ms-2 text-black-50 fs-7">Golden
+                                                Mandheling</span>
+                                            <div class="drink">
+                                                <span class="badge bg-danger m-1">HOT</span>
+                                                <span class="badge bg-info m-1">COLD</span>
+                                            </div>
                                         </th>
-                                        <td>$45</td>
-                                        <td>$55</td>
-                                        <td>$65</td>
-                                        <td>
+                                        <td class="align-middle">$45</td>
+                                        <td class="align-middle">$55</td>
+                                        <td class="align-middle">$65</td>
+                                        <td class="align-middle">
                                             <a href="#" class="btn btn-lightBrown text-white btn-sm">咖啡介紹<i
                                                     class="fas fa-arrow-circle-right text-white ms-2"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <th scope="row">
-                                            巧克力王子 Chocolate Prince
-                                            <span class="badge bg-danger m-1">HOT</span>
+                                            巧克力王子<span
+                                                class="d-none d-md-inline-block ms-2 text-black-50 fs-7">Chocolate
+                                                Prince</span>
+                                            <div class="drink">
+                                                <span class="badge bg-danger m-1">HOT</span>
+                                            </div>
                                         </th>
-                                        <td>$45</td>
-                                        <td>$55</td>
-                                        <td>$65</td>
-                                        <td>
+                                        <td class="align-middle">$45</td>
+                                        <td class="align-middle">$55</td>
+                                        <td class="align-middle">$65</td>
+                                        <td class="align-middle">
                                             <a href="#" class="btn btn-lightBrown text-white btn-sm">咖啡介紹<i
                                                     class="fas fa-arrow-circle-right text-white ms-2"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <th scope="row">
-                                            果樹女神 Pomona
-                                            <span class="badge bg-info m-1">COLD</span>
+                                            果樹女神<span
+                                                class="d-none d-md-inline-block ms-2 text-black-50 fs-7">Pomona</span>
+                                            <div class="drink">
+                                                <span class="badge bg-info m-1">COLD</span>
+                                            </div>
                                         </th>
-                                        <td>$45</td>
-                                        <td>$55</td>
-                                        <td>$65</td>
-                                        <td>
+                                        <td class="align-middle">$45</td>
+                                        <td class="align-middle">$55</td>
+                                        <td class="align-middle">$65</td>
+                                        <td class="align-middle">
                                             <a href="#" class="btn btn-lightBrown text-white btn-sm">咖啡介紹<i
                                                     class="fas fa-arrow-circle-right text-white ms-2"></i></a>
                                         </td>
@@ -362,11 +417,11 @@
                 </div>
                 <div class="tab-pane fade" id="messages" role="tabpanel">
                     <div class="row d-flex justify-content-center">
-                        <div class="col-4">
+                        <div class="col-lg-4">
                             <div class="img-box"
                                 style="background-image: url(https://images.unsplash.com/photo-1521302080334-4bebac2763a6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80);">
                             </div>
-                            <ul class="my-2 text-black-50">
+                            <ul class="my-lg-2 my-3 text-black-50">
                                 <li>榮獲澳洲AICA咖啡評鑑銅獎</li>
                                 <li>榮獲IIAC國際評鑑金獎(Filter)</li>
                                 <li>冷萃咖啡均無額外添加砂糖</li>
@@ -374,7 +429,7 @@
                                 <li>百貨/商場 門市不適用下述售價</li>
                             </ul>
                         </div>
-                        <div class="col-8">
+                        <div class="col-lg-8">
                             <table class="table table-hover menu">
                                 <thead>
                                     <tr>
@@ -382,90 +437,107 @@
                                         <th scope="col" width="8%" class="text-center">S</th>
                                         <th scope="col" width="8%" class="text-center">M</th>
                                         <th scope="col" width="8%" class="text-center">L</th>
-                                        <th scope="col" width="18%"></th>
+                                        <th scope="col" width="30%"></th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <th scope="row">
-                                            精品哥倫翡玉 Green Jade Specialty
+                                        <th scope="row align-middle">
+                                            <span class="me-2">精品哥倫翡玉</span>
+                                            <span class="d-none d-md-inline-block text-black-50 fs-7">Green
+                                                Jade
+                                                Specialty</span>
                                         </th>
-                                        <td>$45</td>
-                                        <td>$55</td>
-                                        <td>$65</td>
-                                        <td>
+                                        <td class="align-middle">$45</td>
+                                        <td class="align-middle">$55</td>
+                                        <td class="align-middle">$65</td>
+                                        <td class="align-middle">
                                             <a href="#" class="btn btn-lightBrown text-white btn-sm">咖啡介紹<i
                                                     class="fas fa-arrow-circle-right text-white ms-2"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <th scope="row">
-                                            精品檸檬冷萃 Lemon Cold Brew Coffee
+                                            <span class="me-2">精品檸檬冷萃</span>
+                                            <span class="d-none d-md-inline-block text-black-50 fs-7">Lemon
+                                                Cold
+                                                Brew Coffee</span>
                                         </th>
-                                        <td>$45</td>
-                                        <td>$55</td>
-                                        <td>$65</td>
-                                        <td>
+                                        <td class="align-middle">$45</td>
+                                        <td class="align-middle">$55</td>
+                                        <td class="align-middle">$65</td>
+                                        <td class="align-middle">
                                             <a href="#" class="btn btn-lightBrown text-white btn-sm">咖啡介紹<i
                                                     class="fas fa-arrow-circle-right text-white ms-2"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <th scope="row">
-                                            精品鳳梨冷萃 Pineapple Cold Brew Coffee
+                                            <span class="me-2">精品鳳梨冷萃</span>
+                                            <span class="d-none d-md-inline-block text-black-50 fs-7">Pineapple
+                                                Cold Brew Coffee</span>
                                         </th>
-                                        <td>$45</td>
-                                        <td>$55</td>
-                                        <td>$65</td>
-                                        <td>
+                                        <td class="align-middle">$45</td>
+                                        <td class="align-middle">$55</td>
+                                        <td class="align-middle">$65</td>
+                                        <td class="align-middle">
                                             <a href="#" class="btn btn-lightBrown text-white btn-sm">咖啡介紹<i
                                                     class="fas fa-arrow-circle-right text-white ms-2"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <th scope="row">
-                                            白貴妃氣泡冷萃 GLychee Sparkling Cold Brew Coffee
+                                            <span class="me-2">白貴妃氣泡冷萃</span>
+                                            <span class="d-none d-md-inline-block text-black-50 fs-7">GLychee
+                                                Sparkling Cold Brew Coffee</span>
                                         </th>
-                                        <td>$45</td>
-                                        <td>$55</td>
-                                        <td>$65</td>
-                                        <td>
+                                        <td class="align-middle">$45</td>
+                                        <td class="align-middle">$55</td>
+                                        <td class="align-middle">$65</td>
+                                        <td class="align-middle">
                                             <a href="#" class="btn btn-lightBrown text-white btn-sm">咖啡介紹<i
                                                     class="fas fa-arrow-circle-right text-white ms-2"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <th scope="row">
-                                            黑糖鳳氣泡冷萃 Brown Pineapple Sparkling Cold Brew Coffee
+                                            <span class="me-2">黑糖鳳氣泡冷萃</span>
+                                            <span class="d-none d-md-inline-block text-black-50 fs-7">Brown
+                                                Pineapple Sparkling Cold Brew Coffee</span>
                                         </th>
-                                        <td>$45</td>
-                                        <td>$55</td>
-                                        <td>$65</td>
-                                        <td>
+                                        <td class="align-middle">$45</td>
+                                        <td class="align-middle">$55</td>
+                                        <td class="align-middle">$65</td>
+                                        <td class="align-middle">
                                             <a href="#" class="btn btn-lightBrown text-white btn-sm">咖啡介紹<i
                                                     class="fas fa-arrow-circle-right text-white ms-2"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <th scope="row">
-                                            黃鹹檸氣泡冷萃 Lemon Sea Salt Sparkling Cold Brew Coffee
+                                            <span class="me-2">黃鹹檸氣泡冷萃</span>
+                                            <span class="d-none d-md-inline-block text-black-50 fs-7">Lemon
+                                                Sea
+                                                Salt Sparkling Cold Brew Coffee</span>
                                         </th>
-                                        <td>$45</td>
-                                        <td>$55</td>
-                                        <td>$65</td>
-                                        <td>
+                                        <td class="align-middle">$45</td>
+                                        <td class="align-middle">$55</td>
+                                        <td class="align-middle">$65</td>
+                                        <td class="align-middle">
                                             <a href="#" class="btn btn-lightBrown text-white btn-sm">咖啡介紹<i
                                                     class="fas fa-arrow-circle-right text-white ms-2"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <th scope="row">
-                                            花香耶加雪菲 Floral Yirgacheffe
+                                            <span class="me-2">花香耶加雪菲</span>
+                                            <span class="d-none d-md-inline-block text-black-50 fs-7">Floral
+                                                Yirgacheffe</span>
                                         </th>
-                                        <td>$45</td>
-                                        <td>$55</td>
-                                        <td>$65</td>
-                                        <td>
+                                        <td class="align-middle">$45</td>
+                                        <td class="align-middle">$55</td>
+                                        <td class="align-middle">$65</td>
+                                        <td class="align-middle">
                                             <a href="#" class="btn btn-lightBrown text-white btn-sm">咖啡介紹<i
                                                     class="fas fa-arrow-circle-right text-white ms-2"></i></a>
                                         </td>
@@ -477,34 +549,35 @@
                 </div>
                 <div class="tab-pane fade" id="settings" role="tabpanel">
                     <div class="row d-flex justify-content-center">
-                        <div class="col-4">
+                        <div class="col-lg-4">
                             <div class="img-box"
                                 style="background-image: url(https://images.unsplash.com/photo-1550681560-af9bc1cb339e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);">
                             </div>
-                            <ul class="my-2 text-black-50">
+                            <ul class="my-lg-2 my-3 text-black-50">
                                 <li>「中焙」口感層次豐富、酸苦均衡</li>
                                 <li>「深焙」則是苦味明顯、餘味回甘</li>
                                 <li>「黃金烘焙」烘焙時間較短，風味更輕盈醇美</li>
                             </ul>
                         </div>
-                        <div class="col-8">
+                        <div class="col-lg-8">
                             <table class="table table-hover menu mb-5">
                                 <thead>
                                     <tr>
                                         <th scope="col">黃金烘焙系列</th>
                                         <th scope="col" width="8%" class="text-center">250g</th>
                                         <th scope="col" width="8%" class="text-center">350g</th>
-                                        <th scope="col" width="18%"></th>
+                                        <th scope="col" width="30%"></th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <th scope="row">
-                                            輕柳綜合咖啡豆 Willow Blend
+                                            輕柳綜合咖啡豆<span class="d-none d-md-inline-block ms-2 text-black-50 fs-7">Willow
+                                                Blend</span>
                                         </th>
-                                        <td>$380</td>
-                                        <td>$520</td>
-                                        <td>
+                                        <td class="align-middle">$380</td>
+                                        <td class="align-middle">$520</td>
+                                        <td class="align-middle">
                                             <a href="#" class="btn btn-lightBrown text-white btn-sm">了解詳情<i
                                                     class="fas fa-arrow-circle-right text-white ms-2"></i></a>
                                         </td>
@@ -517,39 +590,43 @@
                                         <th scope="col">中度烘焙系列</th>
                                         <th scope="col" width="8%" class="text-center">250g</th>
                                         <th scope="col" width="8%" class="text-center">350g</th>
-                                        <th scope="col" width="18%"></th>
+                                        <th scope="col" width="30%"></th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <th scope="row">
-                                            瓜地馬拉安提瓜咖啡豆 Guatemala Antigua
+                                            瓜地馬拉安提瓜咖啡豆<span
+                                                class="d-none d-md-inline-block ms-2 text-black-50 fs-7">Guatemala
+                                                Antigua</span>
                                         </th>
-                                        <td>$380</td>
-                                        <td>$520</td>
-                                        <td>
+                                        <td class="align-middle">$380</td>
+                                        <td class="align-middle">$520</td>
+                                        <td class="align-middle">
                                             <a href="#" class="btn btn-lightBrown text-white btn-sm">了解詳情<i
                                                     class="fas fa-arrow-circle-right text-white ms-2"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <th scope="row">
-                                            肯亞咖啡豆 Kenya
+                                            肯亞咖啡豆<span
+                                                class="d-none d-md-inline-block ms-2 text-black-50 fs-7">Kenya</span>
                                         </th>
-                                        <td>$380</td>
-                                        <td>$520</td>
-                                        <td>
+                                        <td class="align-middle">$380</td>
+                                        <td class="align-middle">$520</td>
+                                        <td class="align-middle">
                                             <a href="#" class="btn btn-lightBrown text-white btn-sm">了解詳情<i
                                                     class="fas fa-arrow-circle-right text-white ms-2"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <th scope="row">
-                                            哥倫比亞咖啡豆 Colombia
+                                            哥倫比亞咖啡豆<span
+                                                class="d-none d-md-inline-block ms-2 text-black-50 fs-7">Colombia</span>
                                         </th>
-                                        <td>$380</td>
-                                        <td>$520</td>
-                                        <td>
+                                        <td class="align-middle">$380</td>
+                                        <td class="align-middle">$520</td>
+                                        <td class="align-middle">
                                             <a href="#" class="btn btn-lightBrown text-white btn-sm">了解詳情<i
                                                     class="fas fa-arrow-circle-right text-white ms-2"></i></a>
                                         </td>
@@ -562,28 +639,30 @@
                                         <th scope="col">深度烘焙系列</th>
                                         <th scope="col" width="8%" class="text-center">250g</th>
                                         <th scope="col" width="8%" class="text-center">350g</th>
-                                        <th scope="col" width="18%"></th>
+                                        <th scope="col" width="30%"></th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <th scope="row">
-                                            蘇門答臘咖啡豆 Sumatra
+                                            蘇門答臘咖啡豆<span
+                                                class="d-none d-md-inline-block ms-2 text-black-50 fs-7">Sumatra</span>
                                         </th>
-                                        <td>$380</td>
-                                        <td>$520</td>
-                                        <td>
+                                        <td class="align-middle">$380</td>
+                                        <td class="align-middle">$520</td>
+                                        <td class="align-middle">
                                             <a href="#" class="btn btn-lightBrown text-white btn-sm">了解詳情<i
                                                     class="fas fa-arrow-circle-right text-white ms-2"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <th scope="row">
-                                            佛羅娜綜合咖啡豆 Caffe Verona
+                                            佛羅娜綜合咖啡豆<span class="d-none d-md-inline-block ms-2 text-black-50 fs-7">Caffe
+                                                Verona</span>
                                         </th>
-                                        <td>$380</td>
-                                        <td>$520</td>
-                                        <td>
+                                        <td class="align-middle">$380</td>
+                                        <td class="align-middle">$520</td>
+                                        <td class="align-middle">
                                             <a href="#" class="btn btn-lightBrown text-white btn-sm">了解詳情<i
                                                     class="fas fa-arrow-circle-right text-white ms-2"></i></a>
                                         </td>
