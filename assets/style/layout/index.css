@@ -239,4 +239,24 @@ textarea {
   text-align: center;
 }
 
+.tea .tea-list .img-box {
+  height: 300px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.tea .menu td {
+  text-align: center;
+}
+
+.food .food-list .img-box {
+  height: 300px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.food .menu td {
+  text-align: center;
+}
+
 /*# sourceMappingURL=index.css.map */
