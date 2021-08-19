@@ -242,3 +242,33 @@ textarea {
         }
     }
 }
+
+.tea {
+    .tea-list {
+        .img-box {
+            height: 300px;
+            @include bg-cover;
+        }
+    }
+
+    .menu {
+        td {
+            text-align: center;
+        }
+    }
+}
+
+.food {
+    .food-list {
+        .img-box {
+            height: 300px;
+            @include bg-cover;
+        }
+    }
+
+    .menu {
+        td {
+            text-align: center;
+        }
+    }
+}
