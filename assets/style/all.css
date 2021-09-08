@@ -12316,4 +12316,12 @@ textarea {
   text-align: center;
 }
 
+.step-list {
+  font-size: 85px;
+}
+
+.w-40 {
+  max-width: 40%;
+}
+
 /*# sourceMappingURL=all.css.map */
