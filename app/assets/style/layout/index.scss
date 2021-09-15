@@ -3,6 +3,11 @@
     background-position: center center;
 }
 
+.bg-cover {
+    background-size: cover;
+    background-position: center center;
+}
+
 @mixin bg-dark {
     background-color: rgba(0, 0, 0, .6);
     background-blend-mode: multiply;
@@ -275,8 +280,4 @@ textarea {
 
 .step-list {
     font-size: 85px;
-}
-
-.w-40 {
-    max-width: 40%;
 }
