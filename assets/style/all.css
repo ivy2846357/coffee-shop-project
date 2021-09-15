@@ -12055,6 +12055,11 @@ fieldset:disabled .btn {
   }
 }
 
+.bg-cover {
+  background-size: cover;
+  background-position: center center;
+}
+
 a {
   text-decoration: none;
 }
@@ -12318,10 +12323,6 @@ textarea {
 
 .step-list {
   font-size: 85px;
-}
-
-.w-40 {
-  max-width: 40%;
 }
 
 /*# sourceMappingURL=all.css.map */
