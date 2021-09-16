@@ -281,3 +281,9 @@ textarea {
 .step-list {
     font-size: 85px;
 }
+
+.img-box {
+    &-h-400 {
+        height: 400px;
+    }
+}
