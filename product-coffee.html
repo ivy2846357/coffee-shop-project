@@ -6,8 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CC coffee - 商品介紹 - 咖啡</title>
+  <!-- font-awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <!-- swiper-CSS -->
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <!-- CSS -->
   <link rel="stylesheet" href="./assets/style/all.css">
 
 </head>
@@ -16,22 +19,28 @@
   <!-- 導覽列 -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
+      <!-- LOGO -->
       <a class="navbar-brand text-beige" href="index.html">CC COFFEE</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <!-- 選單 -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <!-- 首頁 -->
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="./index.html">首頁</a>
           </li>
+          <!-- 關於我們 -->
           <li class="nav-item">
             <a class="nav-link" href="about.html">關於我們</a>
           </li>
+          <!-- 最新消息 -->
           <li class="nav-item">
             <a class="nav-link" href="news.html">最新消息</a>
           </li>
+          <!-- 店內餐飲 -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
@@ -47,9 +56,11 @@
               <li><a class="dropdown-item" href="product-card.html">咖啡隨行卡</a></li>
             </ul>
           </li>
+          <!-- 門市資訊 -->
           <li class="nav-item">
             <a class="nav-link" href="shop.html">門市資訊</a>
           </li>
+          <!-- 聯絡我們 -->
           <li class="nav-item">
             <a class="nav-link" href="./contact.html">聯絡我們</a>
           </li>
@@ -61,14 +72,16 @@
   
 <div class="coffee my-5">
     <div class="container-md">
+        <!-- 咖啡商品標題 -->
         <div class="d-flex flex-column text-center align-items-center mb-4">
             <h2 class="text-brown title-border my-5">咖啡飲品</h2>
-            <small class="text-black-50 title-word w-75">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum
+            <small class="text-black-50 subtitle-word">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Illum
                 dolor aliquid nesciunt voluptatum saepe ratione architecto voluptates sunt, voluptas, sint cupiditate
                 doloremque praesentium non accusantium?</small>
         </div>
         <div role="tabpanel" class="coffee-list my-5">
-            <!-- List group -->
+            <!-- 咖啡商品列表 -->
             <div class="container-md mb-5">
                 <div class="list-group list-group-horizontal-md mb-4 text-center" id="myList" role="tablist">
                     <a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#home"
@@ -82,14 +95,17 @@
                 </div>
             </div>
 
-            <!-- Tab panes -->
+            <!-- 各咖啡商品列表 -->
             <div class="tab-content container-md">
+                <!-- 新鮮現烘 -->
                 <div class="tab-pane fade show active" id="home" role="tabpanel">
                     <div class="row d-flex justify-content-center">
                         <div class="col-lg-4">
+                            <!-- 圖片 -->
                             <div class="bg-cover"
                                 style="background-image: url(https://images.unsplash.com/photo-1460865332492-81fd69fc5996?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80); height: 300px;">
                             </div>
+                            <!-- 詳細介紹 -->
                             <ul class="my-lg-2 my-3 text-black-50">
                                 <li>現烘焙咖啡皆以義式咖啡豆製作</li>
                                 <li>產地：哥倫比亞、衣索比亞、巴西、薩爾瓦多、尼加拉瓜</li>
@@ -98,6 +114,7 @@
                                 <li>百貨/商場 門市不適用下述售價</li>
                             </ul>
                         </div>
+                        <!-- 品項 -->
                         <div class="col-lg-8">
                             <table class="table table-hover menu">
                                 <thead>
@@ -115,8 +132,8 @@
                                             經典黑咖啡<span
                                                 class="d-none d-md-inline-block ms-2 text-black-50 fs-7">Americano</span>
                                             <div class="drink">
-                                                <span class="badge bg-danger m-1">HOT</span>
-                                                <span class="badge bg-info m-1">COLD</span>
+                                                <span class="badge bg-danger me-1">HOT</span>
+                                                <span class="badge bg-info">COLD</span>
                                             </div>
                                         </th>
                                         <td class="align-middle">$45</td>
@@ -133,7 +150,7 @@
                                             濃縮咖啡<span class="d-none d-md-inline-block ms-2 text-black-50 fs-7">Single
                                                 Espresso</span>
                                             <div class="drink">
-                                                <span class="badge bg-danger m-1">HOT</span>
+                                                <span class="badge bg-danger">HOT</span>
                                             </div>
                                         </th>
                                         <td class="align-middle">$45</td>
@@ -149,8 +166,8 @@
                                             特調咖啡<span class="d-none d-md-inline-block ms-2 text-black-50 fs-7">Flavored
                                                 Coffee</span>
                                             <div class="drink">
-                                                <span class="badge bg-danger m-1">HOT</span>
-                                                <span class="badge bg-info m-1">COLD</span>
+                                                <span class="badge bg-danger me-1">HOT</span>
+                                                <span class="badge bg-info">COLD</span>
                                             </div>
                                         </th>
                                         <td class="align-middle">$45</td>
@@ -166,8 +183,8 @@
                                             卡布奇諾<span
                                                 class="d-none d-md-inline-block ms-2 text-black-50 fs-7">Cappuccino</span>
                                             <div class="drink">
-                                                <span class="badge bg-danger m-1">HOT</span>
-                                                <span class="badge bg-info m-1">COLD</span>
+                                                <span class="badge bg-danger me-1">HOT</span>
+                                                <span class="badge bg-info">COLD</span>
                                             </div>
                                         </th>
                                         <td class="align-middle">$45</td>
@@ -183,7 +200,7 @@
                                             經典拿鐵<span
                                                 class="d-none d-md-inline-block ms-2 text-black-50 fs-7">Latte</span>
                                             <div class="drink">
-                                                <span class="badge bg-danger m-1">HOT</span>
+                                                <span class="badge bg-danger">HOT</span>
                                             </div>
                                         </th>
                                         <td class="align-middle">$45</td>
@@ -201,7 +218,7 @@
                                                 Coffee
                                                 Latte</span>
                                             <div class="drink">
-                                                <span class="badge bg-info m-1">COLD</span>
+                                                <span class="badge bg-info">COLD</span>
                                             </div>
                                         </th>
                                         <td class="align-middle">$45</td>
@@ -217,7 +234,7 @@
                                             蜂蜜拿鐵<span class="d-none d-md-inline-block ms-2 text-black-50 fs-7">Honey
                                                 Latte</span>
                                             <div class="drink">
-                                                <span class="badge bg-danger m-1">HOT</span>
+                                                <span class="badge bg-danger">HOT</span>
                                             </div>
                                         </th>
                                         <td class="align-middle">$45</td>
@@ -234,7 +251,7 @@
                                                 Caramel
                                                 Latte</span>
                                             <div class="drink">
-                                                <span class="badge bg-danger m-1">HOT</span>
+                                                <span class="badge bg-danger">HOT</span>
                                             </div>
                                         </th>
                                         <td class="align-middle">$45</td>
@@ -252,8 +269,8 @@
                                                 Coffee
                                                 Jelly</span>
                                             <div class="drink">
-                                                <span class="badge bg-danger m-1">HOT</span>
-                                                <span class="badge bg-info m-1">COLD</span>
+                                                <span class="badge bg-danger me-1">HOT</span>
+                                                <span class="badge bg-info">COLD</span>
                                             </div>
                                         </th>
                                         <td class="align-middle">$45</td>
@@ -269,8 +286,8 @@
                                             焦糖瑪琪朵<span class="d-none d-md-inline-block ms-2 text-black-50 fs-7">Caramel
                                                 Macchiato</span>
                                             <div class="drink">
-                                                <span class="badge bg-danger m-1">HOT</span>
-                                                <span class="badge bg-info m-1">COLD</span>
+                                                <span class="badge bg-danger me-1">HOT</span>
+                                                <span class="badge bg-info">COLD</span>
                                             </div>
                                         </th>
                                         <td class="align-middle">$45</td>
@@ -286,12 +303,15 @@
                         </div>
                     </div>
                 </div>
+                <!-- 精品手沖咖啡 -->
                 <div class="tab-pane fade" id="profile" role="tabpanel">
                     <div class="row d-flex justify-content-center">
+                        <!-- 圖片 -->
                         <div class="col-lg-4">
                             <div class="bg-cover"
                                 style="background-image: url(https://images.unsplash.com/photo-1442512595331-e89e73853f31?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80); height: 300px;">
                             </div>
+                            <!-- 詳細介紹 -->
                             <ul class="my-lg-2 my-3 text-black-50">
                                 <li>榮獲澳洲AICA咖啡評鑑銅獎</li>
                                 <li>榮獲COFFEE REVIEW國際評鑑92分</li>
@@ -300,6 +320,7 @@
                                 <li>百貨/商場 門市不適用下述售價</li>
                             </ul>
                         </div>
+                        <!-- 品項 -->
                         <div class="col-lg-8">
                             <table class="table table-hover menu">
                                 <thead>
@@ -318,8 +339,8 @@
                                                 Jade
                                                 Specialty</span>
                                             <div class="drink">
-                                                <span class="badge bg-danger m-1">HOT</span>
-                                                <span class="badge bg-info m-1">COLD</span>
+                                                <span class="badge bg-danger me-1">HOT</span>
+                                                <span class="badge bg-info">COLD</span>
                                             </div>
                                         </th>
                                         <td class="align-middle">$45</td>
@@ -335,7 +356,7 @@
                                             百蜜花園<span class="d-none d-md-inline-block ms-2 text-black-50 fs-7">Sweet
                                                 Blossom</span>
                                             <div class="drink">
-                                                <span class="badge bg-danger m-1">HOT</span>
+                                                <span class="badge bg-danger">HOT</span>
                                             </div>
                                         </th>
                                         <td class="align-middle">$45</td>
@@ -351,8 +372,8 @@
                                             花香耶加雪菲<span class="d-none d-md-inline-block ms-2 text-black-50 fs-7">Floral
                                                 Yirgacheffe</span>
                                             <div class="drink">
-                                                <span class="badge bg-danger m-1">HOT</span>
-                                                <span class="badge bg-info m-1">COLD</span>
+                                                <span class="badge bg-danger me-1">HOT</span>
+                                                <span class="badge bg-info">COLD</span>
                                             </div>
                                         </th>
                                         <td class="align-middle">$45</td>
@@ -368,8 +389,8 @@
                                             黃金曼巴<span class="d-none d-md-inline-block ms-2 text-black-50 fs-7">Golden
                                                 Mandheling</span>
                                             <div class="drink">
-                                                <span class="badge bg-danger m-1">HOT</span>
-                                                <span class="badge bg-info m-1">COLD</span>
+                                                <span class="badge bg-danger me-1">HOT</span>
+                                                <span class="badge bg-info">COLD</span>
                                             </div>
                                         </th>
                                         <td class="align-middle">$45</td>
@@ -386,7 +407,7 @@
                                                 class="d-none d-md-inline-block ms-2 text-black-50 fs-7">Chocolate
                                                 Prince</span>
                                             <div class="drink">
-                                                <span class="badge bg-danger m-1">HOT</span>
+                                                <span class="badge bg-danger">HOT</span>
                                             </div>
                                         </th>
                                         <td class="align-middle">$45</td>
@@ -402,7 +423,7 @@
                                             果樹女神<span
                                                 class="d-none d-md-inline-block ms-2 text-black-50 fs-7">Pomona</span>
                                             <div class="drink">
-                                                <span class="badge bg-info m-1">COLD</span>
+                                                <span class="badge bg-info">COLD</span>
                                             </div>
                                         </th>
                                         <td class="align-middle">$45</td>
@@ -418,12 +439,15 @@
                         </div>
                     </div>
                 </div>
+                <!-- 冷萃咖啡 -->
                 <div class="tab-pane fade" id="messages" role="tabpanel">
                     <div class="row d-flex justify-content-center">
+                        <!-- 圖片 -->
                         <div class="col-lg-4">
                             <div class="bg-cover"
                                 style="background-image: url(https://images.unsplash.com/photo-1521302080334-4bebac2763a6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80); height: 300px;">
                             </div>
+                            <!-- 詳細說明 -->
                             <ul class="my-lg-2 my-3 text-black-50">
                                 <li>榮獲澳洲AICA咖啡評鑑銅獎</li>
                                 <li>榮獲IIAC國際評鑑金獎(Filter)</li>
@@ -432,6 +456,7 @@
                                 <li>百貨/商場 門市不適用下述售價</li>
                             </ul>
                         </div>
+                        <!-- 品項 -->
                         <div class="col-lg-8">
                             <table class="table table-hover menu">
                                 <thead>
@@ -550,19 +575,24 @@
                         </div>
                     </div>
                 </div>
+                <!-- 嚴選咖啡豆 -->
                 <div class="tab-pane fade" id="settings" role="tabpanel">
                     <div class="row d-flex justify-content-center">
+                        <!-- 圖片 -->
                         <div class="col-lg-4">
                             <div class="bg-cover"
                                 style="background-image: url(https://images.unsplash.com/photo-1550681560-af9bc1cb339e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80); height: 300px;">
                             </div>
+                            <!-- 詳細介紹 -->
                             <ul class="my-lg-2 my-3 text-black-50">
                                 <li>「中焙」口感層次豐富、酸苦均衡</li>
                                 <li>「深焙」則是苦味明顯、餘味回甘</li>
                                 <li>「黃金烘焙」烘焙時間較短，風味更輕盈醇美</li>
                             </ul>
                         </div>
+                        <!-- 品項 -->
                         <div class="col-lg-8">
+                            <!-- 黃金烘培系列 -->
                             <table class="table table-hover menu mb-5">
                                 <thead>
                                     <tr>
@@ -588,6 +618,7 @@
                                     </tr>
                                 </tbody>
                             </table>
+                            <!-- 中度烘培系列 -->
                             <table class="table table-hover menu mb-5">
                                 <thead>
                                     <tr>
@@ -637,6 +668,7 @@
                                     </tr>
                                 </tbody>
                             </table>
+                            <!-- 深度烘培系列 -->
                             <table class="table table-hover menu">
                                 <thead>
                                     <tr>
@@ -685,7 +717,9 @@
   <footer class="footer bg-dark text-white">
     <div class="container d-flex flex-column justify-content-center py-4 text-center">
       <div class="footer-title d-flex px-3 justify-content-center">
+        <!-- footer-店名 -->
         <h3 class="me-4">CC coffee</h3>
+        <!-- 聯絡方式icon -->
         <ul class="icon d-flex list-unstyled">
           <li class="me-2">
             <a href="#" class="btn btn-sm btn-light icon-hover"><i class="fab fa-facebook-square"></i></a>
@@ -698,14 +732,19 @@
           </li>
         </ul>
       </div>
+      <!-- 聯絡資訊 -->
       <p class="mb-0">客服專線：<a href="tel:0800-000-000" class="text-white">0800-000-000</a></p>
       <p class="mb-0">服務時間：週一至週五 09:00-18:00<br>六日與國定假日除外</p>
+      <!-- 版權說明 -->
       <small class="mt-2 text-white-50">
         © 2021 Zaii Hsu. All rights reserved.
       </small>
   </footer>
+  <!-- bootstrap-JS -->
   <script src="./assets/js/vendors.js"></script>
+  <!-- swiper-JS -->
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <!-- JS -->
   <script src="./assets/js/all.js"></script>
 </body>
 

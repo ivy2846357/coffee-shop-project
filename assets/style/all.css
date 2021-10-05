@@ -12055,6 +12055,11 @@ fieldset:disabled .btn {
   }
 }
 
+.bg-blend-mode {
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: multiply;
+}
+
 a {
   text-decoration: none;
 }
@@ -12062,16 +12067,6 @@ a {
 .bg-cover {
   background-size: cover;
   background-position: center center;
-}
-
-.bg-blend-mode {
-  background-color: rgba(0, 0, 0, 0.6);
-  background-blend-mode: multiply;
-}
-
-.contact-btn {
-  display: inline-block;
-  margin: 0 10px;
 }
 
 .card-shadow {
@@ -12139,17 +12134,9 @@ a {
           transform: translateX(-50%);
 }
 
-.title-word {
+.subtitle-word {
   text-align: center;
-  width: 65%;
-}
-
-.card-img-circle {
-  width: 150px;
-  height: 150px;
-  border: 1px solid transparent;
-  border-radius: 50%;
-  overflow: hidden;
+  width: 80%;
 }
 
 .booking-form {
@@ -12171,6 +12158,14 @@ a {
 
 textarea {
   resize: none;
+}
+
+.card-img-circle {
+  width: 150px;
+  height: 150px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .shop-img {
@@ -12214,8 +12209,6 @@ textarea {
   height: 400px;
   background-color: rgba(0, 0, 0, 0);
   background-blend-mode: multiply;
-  background-size: cover;
-  background-position: center center;
 }
 
 .news .img-box:hover {
