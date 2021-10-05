@@ -12055,29 +12055,71 @@ fieldset:disabled .btn {
   }
 }
 
+a {
+  text-decoration: none;
+}
+
 .bg-cover {
   background-size: cover;
   background-position: center center;
 }
 
-a {
-  text-decoration: none;
+.bg-blend-mode {
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: multiply;
 }
 
-textarea {
-  resize: none;
+.contact-btn {
+  display: inline-block;
+  margin: 0 10px;
 }
 
-.carousel-item-height {
-  height: 600px;
-  background-size: cover;
-  background-position: center center;
+.card-shadow {
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
 }
 
-.shop-info-pic {
-  height: 400px;
-  background-size: cover;
-  background-position: center center;
+.card-shadow:hover {
+  -webkit-box-shadow: 1px 3px 6px #BBB;
+          box-shadow: 1px 3px 6px #BBB;
+}
+
+.card-height-hover {
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.card-height-hover:hover {
+  -webkit-transform: translateY(-20px);
+      -ms-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
+.previous a:hover,
+.next a:hover {
+  color: #D79771;
+}
+
+.icon-hover {
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.icon-hover:hover {
+  background-color: #FFEBC9;
+}
+
+.btn-hover {
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.btn-hover:hover {
+  letter-spacing: 3px;
 }
 
 .title-border {
@@ -12097,50 +12139,9 @@ textarea {
           transform: translateX(-50%);
 }
 
-.btn-hover {
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
-}
-
-.btn-hover:hover {
-  letter-spacing: 3px;
-}
-
-.card-img-height {
-  height: 300px;
-  background-size: cover;
-  background-position: center center;
-}
-
 .title-word {
   text-align: center;
   width: 65%;
-}
-
-.card-shadow {
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
-}
-
-.card-shadow:hover {
-  -webkit-box-shadow: 1px 3px 6px #BBB;
-          box-shadow: 1px 3px 6px #BBB;
-}
-
-.discount-card {
-  background-size: cover;
-  background-position: center center;
-  background-color: rgba(0, 0, 0, 0.6);
-  background-blend-mode: multiply;
-}
-
-.customer-comment {
-  background-color: rgba(0, 0, 0, 0.6);
-  background-blend-mode: multiply;
-  background-size: cover;
-  background-position: center center;
 }
 
 .card-img-circle {
@@ -12149,27 +12150,11 @@ textarea {
   border: 1px solid transparent;
   border-radius: 50%;
   overflow: hidden;
-  background-size: cover;
-  background-position: center center;
-}
-
-.card-height-hover {
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
-}
-
-.card-height-hover:hover {
-  -webkit-transform: translateY(-20px);
-      -ms-transform: translateY(-20px);
-          transform: translateY(-20px);
 }
 
 .booking-form {
   background-color: rgba(255, 255, 255, 0.8);
   background-blend-mode: screen;
-  background-size: cover;
-  background-position: center center;
 }
 
 .form-check-input:checked {
@@ -12182,6 +12167,10 @@ textarea {
   -webkit-box-shadow: 0 0 0 0.25rem #FFEBC9;
           box-shadow: 0 0 0 0.25rem #FFEBC9;
   border-color: transparent;
+}
+
+textarea {
+  resize: none;
 }
 
 .shop-img {
@@ -12248,85 +12237,6 @@ textarea {
   -webkit-transition: opacity .3s, visibility 0s;
   -o-transition: opacity .3s, visibility 0s;
   transition: opacity .3s, visibility 0s;
-}
-
-.contact-btn {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-.article-img {
-  width: 100%;
-  height: 500px;
-  background-size: cover;
-  background-position: center center;
-}
-
-.previous a:hover,
-.next a:hover {
-  color: #D79771;
-}
-
-.icon-hover {
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
-}
-
-.icon-hover:hover {
-  background-color: #FFEBC9;
-}
-
-.company-logo {
-  width: 80%;
-}
-
-.about .img-box {
-  height: 400px;
-  background-size: cover;
-  background-position: center center;
-}
-
-.about i {
-  font-size: 5rem;
-}
-
-.coffee .coffee-list .img-box {
-  height: 300px;
-  background-size: cover;
-  background-position: center center;
-}
-
-.coffee .coffee-list .menu td {
-  text-align: center;
-}
-
-.tea .tea-list .img-box {
-  height: 300px;
-  background-size: cover;
-  background-position: center center;
-}
-
-.tea .menu td {
-  text-align: center;
-}
-
-.food .food-list .img-box {
-  height: 300px;
-  background-size: cover;
-  background-position: center center;
-}
-
-.food .menu td {
-  text-align: center;
-}
-
-.step-list {
-  font-size: 85px;
-}
-
-.img-box-h-400 {
-  height: 400px;
 }
 
 /*# sourceMappingURL=all.css.map */
