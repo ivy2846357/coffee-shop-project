@@ -1,23 +1,21 @@
-@mixin bg-cover {
-    background-size: cover;
-    background-position: center center;
-}
-
+//黑色遮色片
 @mixin bg-dark {
     background-color: rgba(0, 0, 0, .6);
     background-blend-mode: multiply;
 }
 
+.bg-blend-mode {
+    background-color: rgba(0, 0, 0, .6);
+    background-blend-mode: multiply;
+}
+
+//連結無底線
 a {
     text-decoration: none;
 }
 
+//圖片置中
 .bg-cover {
     background-size: cover;
     background-position: center center;
-}
-
-.bg-blend-mode {
-    background-color: rgba(0, 0, 0, .6);
-    background-blend-mode: multiply;
 }

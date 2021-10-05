@@ -1,4 +1,4 @@
-//卡片滑入效果
+//卡片hover效果-陰影
 .card-shadow {
     transition: all .3s;
 
@@ -7,7 +7,7 @@
     }
 }
 
-//顧客推薦-卡片滑入效果
+//卡片hover效果-上升
 .card-height-hover {
     transition: all .3s;
 
@@ -16,7 +16,7 @@
     }
 }
 
-//分頁hover設定
+//分頁(文字)hover設定
 .previous a,
 .next a {
     &:hover {
@@ -24,7 +24,7 @@
     }
 }
 
-//footer icon hover 效果
+//footer-icon hover效果
 .icon-hover {
     transition: all .3s;
 
@@ -33,7 +33,7 @@
     }
 }
 
-//按鈕滑入效果
+//按鈕hover效果-間距拉開
 .btn-hover {
     transition: all .3s;
 

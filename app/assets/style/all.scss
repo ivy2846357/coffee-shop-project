@@ -1,15 +1,22 @@
+//bootstrap
 @import "../../../node_modules/bootstrap/scss/functions";
 @import "./helpers/variables";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
+//共同樣式
 @import "./base/base";
 
-@import "./Components/button";
+//元件
 @import "./Components/hover";
 @import "./Components/title";
 
-@import './layout/index.scss';
+//表單樣式
 @import "./layout/form";
 
+//頁面樣式
+//首頁
+@import "./pages/index";
+//門市資訊
 @import "./pages/shop";
+//最新消息
 @import "./pages/news";
