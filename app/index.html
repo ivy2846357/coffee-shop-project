@@ -4,43 +4,38 @@ layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
-<!-- 首頁Banner輪播 -->
-<div id="carouselExampleIndicators" class="carousel slide mt-5" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
+<!-- 首頁Banner -->
+<div class="mt-5">
+    <div class="parallax-img bg-blend-mode bg-cover">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center justify-content-center flex-column h-100">
+                        <h1 class="text-white title-border mb-4">CC coffee</h1>
+                        <p class="text-white text-center mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Illum
+                            dolor aliquid nesciunt voluptatum saepe ratione architecto voluptates sunt, voluptas, sint
+                            cupiditate
+                            doloremque praesentium non accusantium?</p>
+                        <p class="text-white text-center mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Et
+                            deserunt
+                            tempora, magni ullam labore aut!</p>
+                        <div class="d-flex">
+                            <a href="#about-us" class="btn btn-coffee text-white px-4 py-2 me-3">關於我們</a>
+                            <a href="#discount" class="btn btn-coffee text-white px-4 py-2">優惠資訊</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="carousel-inner">
-        <div class="carousel-item active carousel-item-height bg-cover"
-            style="background-image: url(https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80); height: 600px;">
-        </div>
-        <div class="carousel-item carousel-item-height"
-            style="background-image: url(https://images.unsplash.com/photo-1536227661368-deef57acf708?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);">
-        </div>
-        <div class="carousel-item carousel-item-height"
-            style="background-image: url(https://images.unsplash.com/photo-1525193612562-0ec53b0e5d7c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);">
-        </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
 </div>
 
 <!-- 店家資訊 -->
 <div class="shop-info bg-light">
     <div class="container pt-5">
-        <div class="d-flex flex-column text-center align-items-center">
+        <div class="d-flex flex-column text-center align-items-center" id="about-us">
             <h2 class="text-brown title-border mb-5">世界最棒咖啡館</h2>
             <small class="text-black-50 subtitle-word">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Illum
@@ -48,8 +43,25 @@ current: index
                 doloremque praesentium non accusantium?</small>
         </div>
         <div class="row pt-4 p-lg-5 border-bottom">
-            <div class="col-lg-5 bg-cover"
-                style="background-image: url(https://images.unsplash.com/photo-1529022805552-1c88a713c1c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=625&q=80); height: 400px;">
+            <!-- 圖片輪播 -->
+            <div class="col-lg-5" style="height: 400px;">
+                <div class="swiper about-us-Swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"
+                            style="background-image: url(https://images.unsplash.com/photo-1529022805552-1c88a713c1c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=625&q=80);">
+                        </div>
+                        <div class="swiper-slide"
+                            style="background-image: url(https://images.unsplash.com/photo-1494346480775-936a9f0d0877?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1116&q=80);">
+                        </div>
+                        <div class="swiper-slide"
+                            style="background-image: url(https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=774&q=80);">
+                        </div>
+                        <div class="swiper-slide"
+                            style="background-image: url(https://images.unsplash.com/photo-1521017432531-fbd92d768814?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination about-us-swiper-pagination"></div>
+                </div>
             </div>
             <div class="col-12 col-lg-7 px-4 py-4 py-lg-0 d-flex flex-column">
                 <p class="text-lightBrown mb-0">Industrial style cafe</p>
@@ -85,12 +97,26 @@ current: index
                     distinctio blanditiis nesciunt unde minus quo at commodi error? Numquam amet veritatis atque id
                     suscipit totam, ipsa ducimus, laborum, iste ad ut a fugit ex eius temporibus.</p>
                 <div class="d-block">
-                    <a href="about.html#coffee-introduction"
+                    <a href="about.html#shop-chef"
                         class="btn btn-brown px-5 btn-hover d-block d-lg-inline-block">MORE</a>
                 </div>
             </div>
-            <div class="col-lg-5 bg-cover"
-                style="background-image: url(https://images.unsplash.com/photo-1507226983735-a838615193b0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80); height: 400px;"">
+            <!-- 圖片輪播 -->
+            <div class="col-lg-5" style="height: 400px;">
+                <div class="swiper about-us-Swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"
+                            style="background-image: url(https://images.unsplash.com/photo-1507226983735-a838615193b0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);">
+                        </div>
+                        <div class="swiper-slide"
+                            style="background-image: url(https://images.unsplash.com/photo-1507914464562-6ff4ac29692f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);">
+                        </div>
+                        <div class="swiper-slide"
+                            style="background-image: url(https://images.unsplash.com/photo-1515860734122-e0d771b36d3e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80);">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination about-us-swiper-pagination"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -98,319 +124,314 @@ current: index
 
 <!-- 最新消息 -->
 <div class=" blog-info bg-light pb-5">
-                <div class="container pt-5">
-                    <div class="d-flex flex-column text-center align-items-center">
-                        <h2 class="text-brown title-border mb-5">最新消息</h2>
-                        <small class="text-black-50 subtitle-word">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing
-                            elit. Illum
-                            dolor aliquid nesciunt voluptatum saepe ratione architecto voluptates sunt, voluptas, sint
-                            cupiditate
-                            doloremque praesentium non accusantium?</small>
+    <div class="container pt-5">
+        <div class="d-flex flex-column text-center align-items-center">
+            <h2 class="text-brown title-border mb-5">最新消息</h2>
+            <small class="text-black-50 subtitle-word">Lorem ipsum dolor sit amet, consectetur
+                adipisicing
+                elit. Illum
+                dolor aliquid nesciunt voluptatum saepe ratione architecto voluptates sunt, voluptas, sint
+                cupiditate
+                doloremque praesentium non accusantium?</small>
+        </div>
+        <div class="row py-4 py-sm-5 p-lg-5">
+            <div class="col-lg-4 mb-3 mb-lg-0">
+                <div class="card border-0 card-shadow text-center h-100">
+                    <div class="card-img-top card-img-height bg-cover"
+                        style="background-image: url(https://images.unsplash.com/photo-1621188988909-fbef0a88dc04?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80); height: 300px">
                     </div>
-                    <div class="row py-4 py-sm-5 p-lg-5">
-                        <div class="col-lg-4 mb-3 mb-lg-0">
-                            <div class="card border-0 card-shadow text-center h-100">
-                                <div class="card-img-top card-img-height bg-cover"
-                                    style="background-image: url(https://images.unsplash.com/photo-1621188988909-fbef0a88dc04?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80); height: 300px">
-                                </div>
-                                <div class="card-body">
-                                    <h4 class="card-title">新推出法式火腿三明治</h4>
-                                    <p class="card-text text-black-50">Lorem, ipsum dolor sit amet consectetur
-                                        adipisicing elit. Eos
-                                        enim
-                                        recusandae ipsam sequi vel minima laborum atque, a molestias nostrum.</p>
-                                </div>
-                                <div class="card-footer border-0 bg-transparent pb-4">
-                                    <a href="./news-article.html"
-                                        class="btn btn-lightBrown btn-hover d-block d-lg-inline-block px-5">MORE</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 mb-3 mb-lg-0">
-                            <div class="card border-0 card-shadow text-center h-100">
-                                <div class="card-img-top card-img-height bg-cover"
-                                    style="background-image: url(https://images.unsplash.com/photo-1532635241-17e820acc59f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=703&q=80); height: 300px">
-                                </div>
-                                <div class="card-body">
-                                    <h4 class="card-title">好友同享 買一送一</h4>
-                                    <p class="card-text text-black-50">Lorem, ipsum dolor sit amet consectetur
-                                        adipisicing elit.
-                                        Asperiores,
-                                        impedit tempore quidem temporibus, dicta blanditiis quis repellat eaque
-                                        laboriosam
-                                        doloribus, sequi fuga odit. Corporis exercitationem adipisci dignissimos quo
-                                        eaque. Sequi!
-                                    </p>
-                                </div>
-                                <div class="card-footer border-0 bg-transparent pb-4">
-                                    <a href="./news-article.html"
-                                        class="btn btn-lightBrown btn-hover d-block d-lg-inline-block px-5">MORE</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 mb-3 mb-lg-0">
-                            <div class="card border-0 card-shadow text-center h-100">
-                                <div class="card-img-top card-img-height bg-cover"
-                                    style="background-image: url(https://images.unsplash.com/photo-1609475349547-644d546313f6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=80); height: 300px">
-                                </div>
-                                <div class="card-body d-flex flex-column">
-                                    <h4 class="card-title">嚴選印尼亞齊省咖啡豆</h4>
-                                    <p class="card-text text-black-50">Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit.
-                                        Praesentium
-                                        maiores provident, dolorum sapiente vero fugit natus commodi reiciendis
-                                        explicabo tenetur
-                                        facilis, eos ullam atque suscipit.</p>
-                                </div>
-                                <div class="card-footer border-0 bg-transparent pb-4">
-                                    <a href="./news-article.html"
-                                        class="btn btn-lightBrown btn-hover d-block d-lg-inline-block px-5">MORE</a>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="card-body">
+                        <h4 class="card-title">新推出法式火腿三明治</h4>
+                        <p class="card-text text-black-50">Lorem, ipsum dolor sit amet consectetur
+                            adipisicing elit. Eos
+                            enim
+                            recusandae ipsam sequi vel minima laborum atque, a molestias nostrum.</p>
                     </div>
-                    <div class="d-flex flex-column text-center align-items-center">
-                        <h2 class="text-brown title-border mb-5">活動優惠</h2>
-                        <small class="text-black-50 subtitle-word">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing
-                            elit. Illum
-                            dolor aliquid nesciunt voluptatum saepe ratione architecto voluptates sunt, voluptas, sint
-                            cupiditate
-                            doloremque praesentium non accusantium?</small>
+                    <div class="card-footer border-0 bg-transparent pb-4">
+                        <a href="./news-article.html"
+                            class="btn btn-lightBrown btn-hover d-block d-lg-inline-block px-5">MORE</a>
                     </div>
-                    <div class="row py-4 py-sm-5 px-lg-5">
-                        <div class="col-md-6 mb-3 mb-md-0">
-                            <div class="card text-white card-shadow border-0 discount-card bg-cover bg-blend-mode"
-                                style="background-image: url(https://images.unsplash.com/photo-1608286022625-bc07f7a21154?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);">
-                                <div class="card-body d-flex flex-column">
-                                    <h5 class="card-title">夏季消暑 LINEPAY現折100</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional
-                                        content.</p>
-                                    <a href="./news-discount.html"
-                                        class="btn btn-coffee text-white btn-hover d-inline-block align-self-end">MORE</a>
-                                </div>
-                            </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-3 mb-lg-0">
+                <div class="card border-0 card-shadow text-center h-100">
+                    <div class="card-img-top card-img-height bg-cover"
+                        style="background-image: url(https://images.unsplash.com/photo-1532635241-17e820acc59f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=703&q=80); height: 300px">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">好友同享 買一送一</h4>
+                        <p class="card-text text-black-50">Lorem, ipsum dolor sit amet consectetur
+                            adipisicing elit.
+                            Asperiores,
+                            impedit tempore quidem temporibus, dicta blanditiis quis repellat eaque
+                            laboriosam
+                            doloribus, sequi fuga odit. Corporis exercitationem adipisci dignissimos quo
+                            eaque. Sequi!
+                        </p>
+                    </div>
+                    <div class="card-footer border-0 bg-transparent pb-4">
+                        <a href="./news-article.html"
+                            class="btn btn-lightBrown btn-hover d-block d-lg-inline-block px-5">MORE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-3 mb-lg-0">
+                <div class="card border-0 card-shadow text-center h-100">
+                    <div class="card-img-top card-img-height bg-cover"
+                        style="background-image: url(https://images.unsplash.com/photo-1609475349547-644d546313f6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=80); height: 300px">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">嚴選印尼亞齊省咖啡豆</h4>
+                        <p class="card-text text-black-50">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit.
+                            Praesentium
+                            maiores provident, dolorum sapiente vero fugit natus commodi reiciendis
+                            explicabo tenetur
+                            facilis, eos ullam atque suscipit.</p>
+                    </div>
+                    <div class="card-footer border-0 bg-transparent pb-4">
+                        <a href="./news-article.html"
+                            class="btn btn-lightBrown btn-hover d-block d-lg-inline-block px-5">MORE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-column text-center align-items-center" id="discount">
+            <h2 class="text-brown title-border mb-5">活動優惠</h2>
+            <small class="text-black-50 subtitle-word">Lorem ipsum dolor sit amet, consectetur
+                adipisicing
+                elit. Illum
+                dolor aliquid nesciunt voluptatum saepe ratione architecto voluptates sunt, voluptas, sint
+                cupiditate
+                doloremque praesentium non accusantium?</small>
+        </div>
+        <div class="row py-4 py-sm-5 px-lg-5">
+            <div class="col-md-6 mb-3 mb-md-0">
+                <div class="card text-white card-shadow border-0 discount-card bg-cover bg-blend-mode"
+                    style="background-image: url(https://images.unsplash.com/photo-1608286022625-bc07f7a21154?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">夏季消暑 LINEPAY現折100</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional
+                            content.</p>
+                        <a href="./news-discount.html"
+                            class="btn btn-coffee text-white btn-hover d-inline-block align-self-end">MORE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3 mb-md-0">
+                <div class="card text-white card-shadow border-0 discount-card bg-cover bg-blend-mode"
+                    style="background-image: url(https://images.unsplash.com/photo-1541544181051-e46607bc22a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80);">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class=" card-title">防疫全台一心 現外送免運</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional
+                            content.</p>
+                        <a href="./news-discount.html"
+                            class="btn btn-coffee text-white btn-hover d-inline-block align-self-end">MORE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 顧客推薦 -->
+<div class="customer-comment bg-cover bg-blend-mode"
+    style="background-image: url(https://images.unsplash.com/photo-1578632321628-55551b185e57?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);">
+    <div class="container-xl pt-5">
+        <div class="d-flex flex-column text-center align-items-center">
+            <h2 class="text-white title-border mb-5">名人推薦</h2>
+            <small class="text-white subtitle-word">Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Illum
+                dolor aliquid nesciunt voluptatum saepe ratione architecto voluptates sunt, voluptas, sint
+                cupiditate
+                doloremque praesentium non accusantium?</small>
+        </div>
+        <div class="row py-5 p-lg-5 m-0">
+            <div class="col-lg-4 px-3 mb-4 mb-0">
+                <div class="card f-flex flex-column justify-content-center align-items-center p-4 card-height-hover">
+                    <div class="card-img-circle bg-cover"
+                        style="background-image: url(https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);">
+                    </div>
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <div class="customer d-flex align-items-end mb-2">
+                            <h3 class="m-0 me-2 text-brown">LISA</h3>
+                            <p class="m-0 text-coffee">Food blogger</p>
                         </div>
-                        <div class="col-md-6 mb-3 mb-md-0">
-                            <div class="card text-white card-shadow border-0 discount-card bg-cover bg-blend-mode"
-                                style="background-image: url(https://images.unsplash.com/photo-1541544181051-e46607bc22a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80);">
-                                <div class="card-body d-flex flex-column">
-                                    <h5 class=" card-title">防疫全台一心 現外送免運</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional
-                                        content.</p>
-                                    <a href="./news-discount.html"
-                                        class="btn btn-coffee text-white btn-hover d-inline-block align-self-end">MORE</a>
-                                </div>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam
+                            iure sunt
+                            quaerat quisquam blanditiis sit asperiores! Dolore fugiat natus, praesentium
+                            animi nam
+                            repudiandae magni soluta. Dolor ipsum architecto quam sed animi. Quis aspernatur
+                            iste
+                            cupiditate.</p>
+                    </div>
+                    <div class="card-footer w-100 bg-white pt-3">
+                        <div class="star d-flex align-items-center justify-content-between">
+                            <h5 class="m-0 text-coffee">推薦指數</h5>
+                            <div class="icon">
+                                <i class="fas fa-star text-coffee"></i>
+                                <i class="fas fa-star text-coffee"></i>
+                                <i class="fas fa-star text-coffee"></i>
+                                <i class="fas fa-star text-coffee"></i>
+                                <i class="far fa-star text-coffee"></i>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- 顧客推薦 -->
-            <div class="customer-comment bg-cover bg-blend-mode"
-                style="background-image: url(https://images.unsplash.com/photo-1578632321628-55551b185e57?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);">
-                <div class="container-xl pt-5">
-                    <div class="d-flex flex-column text-center align-items-center">
-                        <h2 class="text-white title-border mb-5">名人推薦</h2>
-                        <small class="text-white subtitle-word">Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Illum
-                            dolor aliquid nesciunt voluptatum saepe ratione architecto voluptates sunt, voluptas, sint
-                            cupiditate
-                            doloremque praesentium non accusantium?</small>
+            <div class="col-lg-4 mb-4 mb-0 px-3">
+                <div class="card f-flex flex-column justify-content-center align-items-center p-4 card-height-hover">
+                    <div class="card-img-circle bg-cover"
+                        style="background-image: url(https://images.unsplash.com/photo-1519721782138-5de3d68a2b32?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80);">
                     </div>
-                    <div class="row py-5 p-lg-5 m-0">
-                        <div class="col-lg-4 px-3 mb-4 mb-0">
-                            <div
-                                class="card f-flex flex-column justify-content-center align-items-center p-4 card-height-hover">
-                                <div class="card-img-circle bg-cover"
-                                    style="background-image: url(https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);">
-                                </div>
-                                <div class="card-body d-flex flex-column align-items-center">
-                                    <div class="customer d-flex align-items-end mb-2">
-                                        <h3 class="m-0 me-2 text-brown">LISA</h3>
-                                        <p class="m-0 text-coffee">Food blogger</p>
-                                    </div>
-                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam
-                                        iure sunt
-                                        quaerat quisquam blanditiis sit asperiores! Dolore fugiat natus, praesentium
-                                        animi nam
-                                        repudiandae magni soluta. Dolor ipsum architecto quam sed animi. Quis aspernatur
-                                        iste
-                                        cupiditate.</p>
-                                </div>
-                                <div class="card-footer w-100 bg-white pt-3">
-                                    <div class="star d-flex align-items-center justify-content-between">
-                                        <h5 class="m-0 text-coffee">推薦指數</h5>
-                                        <div class="icon">
-                                            <i class="fas fa-star text-coffee"></i>
-                                            <i class="fas fa-star text-coffee"></i>
-                                            <i class="fas fa-star text-coffee"></i>
-                                            <i class="fas fa-star text-coffee"></i>
-                                            <i class="far fa-star text-coffee"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <div class="customer d-flex align-items-end mb-2">
+                            <h3 class="m-0 me-2 text-brown">ROSE</h3>
+                            <p class="m-0 text-coffee">Barista</p>
                         </div>
-                        <div class="col-lg-4 mb-4 mb-0 px-3">
-                            <div
-                                class="card f-flex flex-column justify-content-center align-items-center p-4 card-height-hover">
-                                <div class="card-img-circle bg-cover"
-                                    style="background-image: url(https://images.unsplash.com/photo-1519721782138-5de3d68a2b32?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80);">
-                                </div>
-                                <div class="card-body d-flex flex-column align-items-center">
-                                    <div class="customer d-flex align-items-end mb-2">
-                                        <h3 class="m-0 me-2 text-brown">ROSE</h3>
-                                        <p class="m-0 text-coffee">Barista</p>
-                                    </div>
-                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam
-                                        iure sunt
-                                        quaerat quisquam blanditiis sit asperiores! Dolore fugiat natus, praesentium
-                                        animi nam
-                                        repudiandae magni soluta. Dolor ipsum architecto quam sed animi. Quis aspernatur
-                                        iste
-                                        cupiditate.</p>
-                                </div>
-                                <div class="card-footer w-100 bg-white pt-3">
-                                    <div class="star d-flex align-items-center justify-content-between">
-                                        <h5 class="m-0 text-coffee">推薦指數</h5>
-                                        <div class="icon">
-                                            <i class="fas fa-star text-coffee"></i>
-                                            <i class="fas fa-star text-coffee"></i>
-                                            <i class="fas fa-star text-coffee"></i>
-                                            <i class="fas fa-star text-coffee"></i>
-                                            <i class="far fa-star text-coffee"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 mb-4 mb-0 px-3">
-                            <div
-                                class="card f-flex flex-column justify-content-center align-items-center p-4 card-height-hover">
-                                <div class="card-img-circle bg-cover"
-                                    style="background-image: url(https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80);">
-                                </div>
-                                <div class="card-body d-flex flex-column align-items-center">
-                                    <div class="customer d-flex align-items-end mb-2">
-                                        <h3 class="m-0 me-2 text-brown">ANDY</h3>
-                                        <p class="m-0 text-coffee">Food blogger</p>
-                                    </div>
-                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam
-                                        iure sunt
-                                        quaerat quisquam blanditiis sit asperiores! Dolore fugiat natus, praesentium
-                                        animi nam
-                                        repudiandae magni soluta. Dolor ipsum architecto quam sed animi. Quis aspernatur
-                                        iste
-                                        cupiditate.</p>
-                                </div>
-                                <div class="card-footer w-100 bg-white pt-3">
-                                    <div class="star d-flex align-items-center justify-content-between">
-                                        <h5 class="m-0 text-coffee">推薦指數</h5>
-                                        <div class="icon">
-                                            <i class="fas fa-star text-coffee"></i>
-                                            <i class="fas fa-star text-coffee"></i>
-                                            <i class="fas fa-star text-coffee"></i>
-                                            <i class="fas fa-star text-coffee"></i>
-                                            <i class="far fa-star text-coffee"></i>
-                                        </div>
-                                    </div>
-                                </div>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam
+                            iure sunt
+                            quaerat quisquam blanditiis sit asperiores! Dolore fugiat natus, praesentium
+                            animi nam
+                            repudiandae magni soluta. Dolor ipsum architecto quam sed animi. Quis aspernatur
+                            iste
+                            cupiditate.</p>
+                    </div>
+                    <div class="card-footer w-100 bg-white pt-3">
+                        <div class="star d-flex align-items-center justify-content-between">
+                            <h5 class="m-0 text-coffee">推薦指數</h5>
+                            <div class="icon">
+                                <i class="fas fa-star text-coffee"></i>
+                                <i class="fas fa-star text-coffee"></i>
+                                <i class="fas fa-star text-coffee"></i>
+                                <i class="fas fa-star text-coffee"></i>
+                                <i class="far fa-star text-coffee"></i>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="col-lg-4 mb-4 mb-0 px-3">
+                <div class="card f-flex flex-column justify-content-center align-items-center p-4 card-height-hover">
+                    <div class="card-img-circle bg-cover"
+                        style="background-image: url(https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80);">
+                    </div>
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <div class="customer d-flex align-items-end mb-2">
+                            <h3 class="m-0 me-2 text-brown">ANDY</h3>
+                            <p class="m-0 text-coffee">Food blogger</p>
+                        </div>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam
+                            iure sunt
+                            quaerat quisquam blanditiis sit asperiores! Dolore fugiat natus, praesentium
+                            animi nam
+                            repudiandae magni soluta. Dolor ipsum architecto quam sed animi. Quis aspernatur
+                            iste
+                            cupiditate.</p>
+                    </div>
+                    <div class="card-footer w-100 bg-white pt-3">
+                        <div class="star d-flex align-items-center justify-content-between">
+                            <h5 class="m-0 text-coffee">推薦指數</h5>
+                            <div class="icon">
+                                <i class="fas fa-star text-coffee"></i>
+                                <i class="fas fa-star text-coffee"></i>
+                                <i class="fas fa-star text-coffee"></i>
+                                <i class="fas fa-star text-coffee"></i>
+                                <i class="far fa-star text-coffee"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-            <!-- 訂位資訊 -->
-            <div class="booking-form py-5 bg-cover"
-                style="background-image: url(https://images.unsplash.com/photo-1493606278519-11aa9f86e40a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);">
-                <div class="container">
+<!-- 訂位資訊 -->
+<div class="booking-form py-5 bg-cover"
+    style="background-image: url(https://images.unsplash.com/photo-1493606278519-11aa9f86e40a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="d-flex flex-column">
+                    <h2 class="text-lightBrown">訂位資訊</h2>
+                    <small class="text-black-50  mb-3 w-75">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit.
+                        Officiis
+                        dolor
+                        saepe odio adipisci molestias cum libero incidunt vero sequi impedit. Voluptatum
+                        sequi ad unde,
+                        beatae reiciendis dolores officia deserunt explicabo.</small>
+                </div>
+                <form class="needs-validation" novalidate>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">訂位人姓名</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">聯絡信箱</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            required>
+                    </div>
                     <div class="row">
                         <div class="col-lg-6">
-                            <div class="d-flex flex-column">
-                                <h2 class="text-lightBrown">訂位資訊</h2>
-                                <small class="text-black-50  mb-3 w-75">Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit.
-                                    Officiis
-                                    dolor
-                                    saepe odio adipisci molestias cum libero incidunt vero sequi impedit. Voluptatum
-                                    sequi ad unde,
-                                    beatae reiciendis dolores officia deserunt explicabo.</small>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">連絡電話</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" required>
                             </div>
-                            <form class="needs-validation" novalidate>
-                                <div class="mb-3">
-                                    <label for="exampleInputEmail1" class="form-label">訂位人姓名</label>
-                                    <input type="text" class="form-control" id="exampleInputEmail1"
-                                        aria-describedby="emailHelp" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleInputEmail1" class="form-label">聯絡信箱</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1"
-                                        aria-describedby="emailHelp" required>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="mb-3">
-                                            <label for="exampleInputEmail1" class="form-label">連絡電話</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                                aria-describedby="emailHelp" required>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="mb-3">
-                                            <label for="exampleInputEmail1" class="form-label">訂位人數</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                                aria-describedby="emailHelp" required>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="mb-3">
-                                            <label for="exampleInputEmail1" class="form-label">預約時間</label>
-                                            <input type="date" class="form-control" id="exampleInputEmail1"
-                                                aria-describedby="emailHelp" required>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <label for="shopselect" class="form-label">門市</label>
-                                        <select class="form-select" aria-label="Default select example" id="shopselect"
-                                            required>
-                                            <option value="Taipei" selected>台北總店</option>
-                                            <option value="Taoyuan">桃園分店</option>
-                                            <option value="Banqiao">板橋分店</option>
-                                            <option value="Taichung">台中分店</option>
-                                            <option value="Kaohsiung">高雄分店</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="flexRadioDefault1" class="form-label">性別</label>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                            id="flexRadioDefault1" checked>
-                                        <label class="form-check-label" for="flexRadioDefault1" required>
-                                            男性
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                            id="flexRadioDefault2">
-                                        <label class="form-check-label" for="flexRadioDefault2" required>
-                                            女性
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="mb-3 form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
-                                    <label class="form-check-label" for="exampleCheck1">已了解相關資訊</label>
-                                </div>
-                                <button type="submit" class="btn btn-lightBrown btn-hover w-100">送出</button>
-                            </form>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">訂位人數</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" required>
+                            </div>
                         </div>
                     </div>
-                </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">預約時間</label>
+                                <input type="date" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" required>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="shopselect" class="form-label">門市</label>
+                            <select class="form-select" aria-label="Default select example" id="shopselect" required>
+                                <option value="Taipei" selected>台北總店</option>
+                                <option value="Taoyuan">桃園分店</option>
+                                <option value="Banqiao">板橋分店</option>
+                                <option value="Taichung">台中分店</option>
+                                <option value="Kaohsiung">高雄分店</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="flexRadioDefault1" class="form-label">性別</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"
+                                checked>
+                            <label class="form-check-label" for="flexRadioDefault1" required>
+                                男性
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault2" required>
+                                女性
+                            </label>
+                        </div>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                        <label class="form-check-label" for="exampleCheck1">已了解相關資訊</label>
+                    </div>
+                    <button type="submit" class="btn btn-lightBrown btn-hover w-100">送出</button>
+                </form>
             </div>
+        </div>
+    </div>
+</div>

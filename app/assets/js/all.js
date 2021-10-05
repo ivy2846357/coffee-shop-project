@@ -1,4 +1,4 @@
-// Example starter JavaScript for disabling form submissions if there are invalid fields
+// 表單驗證
 (function () {
   'use strict'
 
@@ -18,3 +18,23 @@
       }, false)
     })
 })()
+
+// 首頁-店家資訊swiper
+var swiper = new Swiper(".about-us-Swiper", {
+  spaceBetween: 30,
+  pagination: {
+    el: ".about-us-swiper-pagination",
+    clickable: true,
+  },
+});
+
+//關於我們-咖啡師介紹swiper
+var swiper = new Swiper(".coffee-chef-Swiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  freeMode: true,
+  pagination: {
+    el: ".coffee-chef-swiper-pagination",
+    clickable: true,
+  },
+});
