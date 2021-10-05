@@ -1,0 +1,43 @@
+//卡片滑入效果
+.card-shadow {
+    transition: all .3s;
+
+    &:hover {
+        box-shadow: 1px 3px 6px #BBB;
+    }
+}
+
+//顧客推薦-卡片滑入效果
+.card-height-hover {
+    transition: all .3s;
+
+    &:hover {
+        transform: translateY(-20px);
+    }
+}
+
+//分頁hover設定
+.previous a,
+.next a {
+    &:hover {
+        color: #D79771;
+    }
+}
+
+//footer icon hover 效果
+.icon-hover {
+    transition: all .3s;
+
+    &:hover {
+        background-color: #FFEBC9;
+    }
+}
+
+//按鈕滑入效果
+.btn-hover {
+    transition: all .3s;
+
+    &:hover {
+        letter-spacing: 3px;
+    }
+}

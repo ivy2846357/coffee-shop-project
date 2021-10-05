@@ -1,0 +1,26 @@
+//最新消息-圖片漸暗效果
+.news {
+    .img-box {
+        transition: all .3s;
+        height: 400px;
+        background-color: rgba(0, 0, 0, 0);
+        background-blend-mode: multiply;
+        @include bg-cover;
+
+        &:hover {
+            @include bg-dark;
+        }
+
+        .news-img-btn {
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity .3s, visibility 0s .3s;
+        }
+
+        &:hover .news-img-btn {
+            visibility: visible;
+            opacity: 1;
+            transition: opacity .3s, visibility 0s;
+        }
+    }
+}

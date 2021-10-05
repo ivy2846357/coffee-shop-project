@@ -2,4 +2,14 @@
 @import "./helpers/variables";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
+@import "./base/base";
+
+@import "./Components/button";
+@import "./Components/hover";
+@import "./Components/title";
+
 @import './layout/index.scss';
+@import "./layout/form";
+
+@import "./pages/shop";
+@import "./pages/news";

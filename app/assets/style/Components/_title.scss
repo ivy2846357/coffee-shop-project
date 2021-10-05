@@ -1,0 +1,20 @@
+//標題底線
+.title-border {
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100px;
+        height: 5px;
+        background-color: #D79771;
+        left: 50%;
+        top: 150%;
+        transform: translateX(-50%);
+    }
+}
+
+.title-word {
+    text-align: center;
+    width: 65%;
+}
