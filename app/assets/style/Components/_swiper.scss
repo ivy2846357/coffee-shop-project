@@ -32,3 +32,17 @@
     height: 100%;
     object-fit: cover;
 }
+
+.swiper-pagination-bullet {
+    background: #D79771;
+    opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #D79771;
+}
+
+.swiper-md-slide {
+    width: 85%;
+}

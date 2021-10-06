@@ -28,13 +28,23 @@ var swiper = new Swiper(".about-us-Swiper", {
   },
 });
 
-//關於我們-咖啡師介紹swiper
+//關於我們-電腦版咖啡師介紹swiper
 var swiper = new Swiper(".coffee-chef-Swiper", {
   slidesPerView: 3,
   spaceBetween: 30,
   freeMode: true,
   pagination: {
     el: ".coffee-chef-swiper-pagination",
+    clickable: true,
+  },
+});
+
+//關於我們-平板/手機咖啡師介紹swiper
+var swiper = new Swiper(".coffee-chef-md-mySwiper", {
+  slidesPerView: "auto",
+  spaceBetween: 30,
+  pagination: {
+    el: ".coffee-chef-md-swiper-pagination",
     clickable: true,
   },
 });
