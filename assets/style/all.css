@@ -12069,24 +12069,24 @@ a {
   background-position: center center;
 }
 
-.card-shadow {
+.hover-shadow {
   -webkit-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s;
 }
 
-.card-shadow:hover {
+.hover-shadow:hover {
   -webkit-box-shadow: 1px 3px 6px #BBB;
           box-shadow: 1px 3px 6px #BBB;
 }
 
-.card-height-hover {
+.hover-rise {
   -webkit-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s;
 }
 
-.card-height-hover:hover {
+.hover-rise:hover {
   -webkit-transform: translateY(-20px);
       -ms-transform: translateY(-20px);
           transform: translateY(-20px);
@@ -12192,7 +12192,7 @@ textarea {
 }
 
 .parallax-img {
-  height: 100vh;
+  height: 500px;
   background-image: url(https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
   background-attachment: fixed;
 }
