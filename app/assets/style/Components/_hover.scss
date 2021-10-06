@@ -1,5 +1,5 @@
 //卡片hover效果-陰影
-.card-shadow {
+.hover-shadow {
     transition: all .3s;
 
     &:hover {
@@ -8,7 +8,7 @@
 }
 
 //卡片hover效果-上升
-.card-height-hover {
+.hover-rise {
     transition: all .3s;
 
     &:hover {
