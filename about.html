@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
   <!-- swiper-CSS -->
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <!-- AOS-CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- CSS -->
   <link rel="stylesheet" href="./assets/style/all.css">
 
@@ -18,7 +20,7 @@
 <body>
   <!-- 導覽列 -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container-fluid px-lg-5">
+    <div class="container-fluid px-lg-5 px-3">
       <!-- LOGO -->
       <a class="navbar-brand text-beige" href="index.html">CC COFFEE</a>
       <!-- 平板/手機漢堡選單 -->
@@ -74,7 +76,7 @@
 <div class="about my-5">
     <div class="container-lg">
         <!-- 關於我們標題 -->
-        <div class="d-flex flex-column text-center align-items-center">
+        <div class="d-flex flex-column text-center align-items-center" data-aos="fade-up">
             <h2 class="text-brown title-border my-5">關於我們</h2>
             <small class="text-black-50 subtitle-word">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Illum
@@ -82,12 +84,15 @@
                 doloremque praesentium non accusantium?</small>
         </div>
         <!-- 咖啡品質介紹 -->
-        <h3 class="text-center text-lightBrown fw-bold my-5" id="coffee-introduction">從一顆生豆 ‧ 到一杯咖啡</h3>
+        <h3 class="text-center text-lightBrown fw-bold my-5" id="coffee-introduction" data-aos="fade-up"
+            data-aos-delay="300">從一顆生豆 ‧ 到一杯咖啡
+        </h3>
         <div class="row d-flex justify-content-center">
-            <div class="col-lg-5 bg-cover"
+            <div class="col-lg-5 bg-cover" data-aos="fade-right" data-aos-delay="600"
                 style="background-image: url(https://images.unsplash.com/photo-1525088553748-01d6e210e00b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80); height: 400px;">
             </div>
-            <div class="col-lg-5 d-flex flex-column justify-content-center p-4">
+            <div class="col-lg-5 d-flex flex-column justify-content-center p-4" data-aos="fade-left"
+                data-aos-delay="600">
                 <p class="text-black-50 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
                     laudantium
                     assumenda modi quisquam
@@ -97,10 +102,10 @@
             </div>
         </div>
         <div class="row d-flex flex-lg-row-reverse justify-content-center">
-            <div class="col-lg-5 bg-cover"
+            <div class="col-lg-5 bg-cover" data-aos="fade-right"
                 style="background-image: url(https://images.unsplash.com/photo-1522726336270-3a0053210f06?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80); height: 400px;">
             </div>
-            <div class="col-lg-5 d-flex flex-column justify-content-center p-4">
+            <div class="col-lg-5 d-flex flex-column justify-content-center p-4" data-aos="fade-left">
                 <p class="text-black-50 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque
                     distinctio quibusdam tempore? Quam cupiditate mollitia laboriosam ratione maxime accusantium
                     repellendus?</p>
@@ -108,12 +113,12 @@
                     rerum. Laudantium aspernatur placeat a illo rerum veritatis molestias dicta?</p>
             </div>
         </div>
-        <h3 class="text-center text-lightBrown fw-bold my-5">看得到的新鮮，勝過千言萬語</h3>
+        <h3 class="text-center text-lightBrown fw-bold my-5" data-aos="fade-up">看得到的新鮮，勝過千言萬語</h3>
         <div class="row d-flex justify-content-center">
-            <div class="col-lg-5 bg-cover"
+            <div class="col-lg-5 bg-cover" data-aos="fade-right"
                 style="background-image: url(https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80); height: 400px;">
             </div>
-            <div class="col-lg-5 d-flex flex-column justify-content-center p-4">
+            <div class="col-lg-5 d-flex flex-column justify-content-center p-4" data-aos="fade-left">
                 <p class="text-black-50 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
                     laudantium
                     assumenda modi quisquam
@@ -123,10 +128,10 @@
             </div>
         </div>
         <div class="row d-flex flex-lg-row-reverse justify-content-center">
-            <div class="col-lg-5 bg-cover"
+            <div class="col-lg-5 bg-cover" data-aos="fade-right"
                 style="background-image: url(https://images.unsplash.com/photo-1625220677212-ae0c2e797da1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80); height: 400px;">
             </div>
-            <div class="col-lg-5 d-flex flex-column justify-content-center p-4">
+            <div class="col-lg-5 d-flex flex-column justify-content-center p-4" data-aos="fade-left">
                 <p class="text-black-50 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque
                     distinctio quibusdam tempore? Quam cupiditate mollitia laboriosam ratione maxime accusantium
                     repellendus?</p>
@@ -135,10 +140,10 @@
             </div>
         </div>
         <div class="row d-flex justify-content-center">
-            <div class="col-lg-5 bg-cover"
+            <div class="col-lg-5 bg-cover" data-aos="fade-right"
                 style="background-image: url(https://images.unsplash.com/photo-1551462577-9aaf3ff5d927?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=756&q=80); height: 400px;">
             </div>
-            <div class="col-lg-5 d-flex flex-column justify-content-center p-4">
+            <div class="col-lg-5 d-flex flex-column justify-content-center p-4" data-aos="fade-left">
                 <p class="text-black-50 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
                     laudantium
                     assumenda modi quisquam
@@ -148,10 +153,10 @@
             </div>
         </div>
         <div class="row d-flex flex-lg-row-reverse justify-content-center">
-            <div class="col-lg-5 bg-cover"
+            <div class="col-lg-5 bg-cover" data-aos="fade-right"
                 style="background-image: url(https://images.unsplash.com/photo-1518288319310-99bc48891084?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80); height: 400px;">
             </div>
-            <div class="col-lg-5 d-flex flex-column justify-content-center p-4">
+            <div class="col-lg-5 d-flex flex-column justify-content-center p-4" data-aos="fade-left">
                 <p class="text-black-50 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque
                     distinctio quibusdam tempore? Quam cupiditate mollitia laboriosam ratione maxime accusantium
                     repellendus?</p>
@@ -161,7 +166,7 @@
         </div>
         <!-- 店內照片 -->
         <div class="container-lg">
-            <div class="d-flex flex-column text-center align-items-center mb-5">
+            <div class="d-flex flex-column text-center align-items-center mb-5" data-aos="fade-up">
                 <h3 class="text-center text-lightBrown fw-bold mt-5 mb-3" id="shop-environment">在好環境享受好咖啡</h3>
                 <small class="text-black-50 subtitle-word">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Illum
@@ -171,21 +176,21 @@
             </div>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-6 bg-cover img-thumbnail"
+                    <div class="col-lg-6 bg-cover img-thumbnail" data-aos="fade-right"
                         style="background-image: url(https://images.unsplash.com/photo-1463797221720-6b07e6426c24?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80); height: 400px;">
                     </div>
-                    <div class="col-lg-6 bg-cover img-thumbnail"
+                    <div class="col-lg-6 bg-cover img-thumbnail" data-aos="fade-left"
                         style="background-image: url(https://images.unsplash.com/photo-1521017432531-fbd92d768814?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80); height: 400px;">
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-4 bg-cover img-thumbnail"
+                    <div class="col-md-4 bg-cover img-thumbnail" data-aos="fade-up"
                         style="background-image: url(https://images.unsplash.com/photo-1507914464562-6ff4ac29692f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80); height: 400px;">
                     </div>
-                    <div class="col-md-4 bg-cover img-thumbnail"
+                    <div class="col-md-4 bg-cover img-thumbnail" data-aos="fade-up" data-aos-delay="300"
                         style="background-image: url(https://images.unsplash.com/photo-1534040385115-33dcb3acba5b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80); height: 400px;">
                     </div>
-                    <div class="col-md-4 bg-cover img-thumbnail"
+                    <div class="col-md-4 bg-cover img-thumbnail" data-aos="fade-up" data-aos-delay="600"
                         style="background-image: url(https://images.unsplash.com/photo-1578282147845-9864f0740447?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=80); height: 400px;">
                     </div>
                 </div>
@@ -194,7 +199,7 @@
 
         <div class="container-lg">
             <!-- 咖啡師介紹 -->
-            <div class="d-flex flex-column text-center align-items-center">
+            <div class="d-flex flex-column text-center align-items-center" data-aos="fade-up">
                 <h3 class="text-center text-lightBrown fw-bold mt-5 mb-3" id="shop-chef">五星咖啡師調配</h3>
                 <small class="text-black-50 subtitle-word">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Illum
@@ -205,7 +210,7 @@
             <!-- 電腦版咖啡師swiper -->
             <div class="swiper coffee-chef-Swiper py-5 d-none d-lg-block">
                 <div class="swiper-wrapper" style="height: 100%;">
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" data-aos="fade-right">
                         <div class="card hover-shadow w-100 border-0">
                             <img src="https://images.unsplash.com/photo-1531590878845-12627191e687?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=464&q=80"
                                 class="card-img-top" alt="chef-pic" style="height: 300px;">
@@ -225,7 +230,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" data-aos="fade-right" data-aos-delay="300">
                         <div class="card hover-shadow w-100 border-0">
                             <img src="https://images.unsplash.com/photo-1517701848373-805868efd0ac?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80"
                                 class="card-img-top" alt="chef-pic" style="height: 300px;">
@@ -245,7 +250,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" data-aos="fade-right" data-aos-delay="600">
                         <div class="card hover-shadow w-100 border-0">
                             <img src="https://images.unsplash.com/photo-1518127877211-b9c92939659e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
                                 class="card-img-top" alt="chef-pic" style="height: 300px;">
@@ -331,7 +336,7 @@
             <!-- 平板/手機咖啡師swiper -->
             <div class="swiper coffee-chef-md-mySwiper py-5 d-lg-none">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide swiper-md-slide">
+                    <div class="swiper-slide swiper-md-slide" data-aos="fade-right">
                         <div class="card hover-shadow w-100 border-0">
                             <img src="https://images.unsplash.com/photo-1531590878845-12627191e687?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=464&q=80"
                                 class="card-img-top" alt="chef-pic" style="height: 300px;">
@@ -352,7 +357,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide swiper-md-slide">
+                    <div class="swiper-slide swiper-md-slide" data-aos="fade-right" data-aos-delay="300">
                         <div class="card hover-shadow w-100 border-0">
                             <img src="https://images.unsplash.com/photo-1517701848373-805868efd0ac?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80"
                                 class="card-img-top" alt="chef-pic" style="height: 300px;">
@@ -496,6 +501,36 @@
   <script src="./assets/js/vendors.js"></script>
   <!-- swiper-JS -->
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <!-- AOS-JS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    // You can also pass an optional settings object
+    // below listed default settings
+    AOS.init({
+      // Global settings:
+      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+      startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+      initClassName: 'aos-init', // class applied after initialization
+      animatedClassName: 'aos-animate', // class applied on animation
+      useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+      disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+      debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+      throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+      offset: 120, // offset (in px) from the original trigger point
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 400, // values from 0 to 3000, with step 50ms
+      easing: 'ease', // default easing for AOS animations
+      once: false, // whether animation should happen only once - while scrolling down
+      mirror: false, // whether elements should animate out while scrolling past them
+      anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+    });
+  </script>
   <!-- JS -->
   <script src="./assets/js/all.js"></script>
 </body>

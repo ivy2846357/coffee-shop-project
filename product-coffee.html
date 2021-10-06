@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
   <!-- swiper-CSS -->
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <!-- AOS-CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- CSS -->
   <link rel="stylesheet" href="./assets/style/all.css">
 
@@ -18,7 +20,7 @@
 <body>
   <!-- 導覽列 -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container-fluid px-lg-5">
+    <div class="container-fluid px-lg-5 px-3">
       <!-- LOGO -->
       <a class="navbar-brand text-beige" href="index.html">CC COFFEE</a>
       <!-- 平板/手機漢堡選單 -->
@@ -74,7 +76,7 @@
 <div class="coffee my-5">
     <div class="container-md">
         <!-- 咖啡商品標題 -->
-        <div class="d-flex flex-column text-center align-items-center mb-4">
+        <div class="d-flex flex-column text-center align-items-center mb-4" data-aos="fade-up">
             <h2 class="text-brown title-border my-5">咖啡飲品</h2>
             <small class="text-black-50 subtitle-word">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Illum
@@ -83,7 +85,7 @@
         </div>
         <div role="tabpanel" class="coffee-list my-5">
             <!-- 咖啡商品列表 -->
-            <div class="container-md mb-5">
+            <div class="container-md mb-5" data-aos="fade-up" data-aos-delay="300">
                 <div class="list-group list-group-horizontal-md mb-4 text-center" id="myList" role="tablist">
                     <a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#home"
                         role="tab">新鮮現烘</a>
@@ -97,7 +99,7 @@
             </div>
 
             <!-- 各咖啡商品列表 -->
-            <div class="tab-content container-md">
+            <div class="tab-content container-md" data-aos="fade-up" data-aos-delay="600">
                 <!-- 新鮮現烘 -->
                 <div class="tab-pane fade show active" id="home" role="tabpanel">
                     <div class="row d-flex justify-content-center">
@@ -772,6 +774,36 @@
   <script src="./assets/js/vendors.js"></script>
   <!-- swiper-JS -->
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <!-- AOS-JS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    // You can also pass an optional settings object
+    // below listed default settings
+    AOS.init({
+      // Global settings:
+      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+      startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+      initClassName: 'aos-init', // class applied after initialization
+      animatedClassName: 'aos-animate', // class applied on animation
+      useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+      disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+      debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+      throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+      offset: 120, // offset (in px) from the original trigger point
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 400, // values from 0 to 3000, with step 50ms
+      easing: 'ease', // default easing for AOS animations
+      once: false, // whether animation should happen only once - while scrolling down
+      mirror: false, // whether elements should animate out while scrolling past them
+      anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+    });
+  </script>
   <!-- JS -->
   <script src="./assets/js/all.js"></script>
 </body>
