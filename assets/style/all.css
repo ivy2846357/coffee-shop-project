@@ -12087,9 +12087,9 @@ a {
 }
 
 .hover-rise:hover {
-  -webkit-transform: translateY(-20px);
-      -ms-transform: translateY(-20px);
-          transform: translateY(-20px);
+  -webkit-transform: translateY(-8px);
+      -ms-transform: translateY(-8px);
+          transform: translateY(-8px);
 }
 
 .previous a:hover,
@@ -12170,6 +12170,20 @@ a {
      object-fit: cover;
 }
 
+.swiper-pagination-bullet {
+  background: #D79771;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #D79771;
+}
+
+.swiper-md-slide {
+  width: 85%;
+}
+
 .booking-form {
   background-color: rgba(255, 255, 255, 0.8);
   background-blend-mode: screen;
@@ -12192,8 +12206,6 @@ textarea {
 }
 
 .parallax-img {
-  height: 500px;
-  background-image: url(https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
   background-attachment: fixed;
 }
 
