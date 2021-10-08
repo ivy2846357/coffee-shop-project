@@ -44,10 +44,10 @@
             <a class="nav-link" href="news.html">最新消息</a>
           </li>
           <!-- 店內餐飲 -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+          <li class="nav-item dropdown" id="myDropdown">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
-              店內餐飲
+              店內餐飲<i class="fas fa-caret-down ms-2 caret caret-change"></i>
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="product-coffee.html">咖啡</a></li>
@@ -102,7 +102,7 @@
             </div>
 
             <!-- 各輕食小吃列表 -->
-            <div class="tab-content container-md" data-aos="fade-up" data-aos-delay="600">
+            <div class="tab-content container-md" data-aos="fade-up">
                 <!-- 三明治 -->
                 <div class="tab-pane fade show active" id="home" role="tabpanel">
                     <div class="row d-flex justify-content-center">
@@ -768,6 +768,9 @@
   <script src="./assets/js/vendors.js"></script>
   <!-- swiper-JS -->
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
   <!-- AOS-JS -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
@@ -792,7 +795,7 @@
       delay: 0, // values from 0 to 3000, with step 50ms
       duration: 400, // values from 0 to 3000, with step 50ms
       easing: 'ease', // default easing for AOS animations
-      once: false, // whether animation should happen only once - while scrolling down
+      once: true, // whether animation should happen only once - while scrolling down
       mirror: false, // whether elements should animate out while scrolling past them
       anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 

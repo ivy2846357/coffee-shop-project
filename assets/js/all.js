@@ -44,5 +44,15 @@ var swiper = new Swiper(".coffee-chef-md-mySwiper", {
     el: ".coffee-chef-md-swiper-pagination",
     clickable: true
   }
+}); //下拉選單動畫
+
+$(document).ready(function () {
+  $('.dropdown').click(function (e) {
+    //箭頭旋轉動畫
+    $('.caret').stop().toggleClass('caret-change__active');
+  }); //下拉式選單動畫
+  // $('#myDropdown').on('show.bs.dropdown', function () {
+  //   $('.dropdown-menu').stop().slideToggle(600);
+  // })
 });
 //# sourceMappingURL=all.js.map
