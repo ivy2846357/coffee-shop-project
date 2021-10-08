@@ -12069,6 +12069,14 @@ a {
   background-position: center center;
 }
 
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
+
 .hover-shadow {
   -webkit-transition: all .3s;
   -o-transition: all .3s;
@@ -12092,28 +12100,44 @@ a {
           transform: translateY(-8px);
 }
 
-.previous a:hover,
-.next a:hover {
-  color: #D79771;
-}
-
-.icon-hover {
+.hover-change-color-bg {
   -webkit-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s;
 }
 
-.icon-hover:hover {
+.hover-change-color-bg:hover {
   background-color: #FFEBC9;
 }
 
-.btn-hover {
+.hover-change-color-word__light {
+  color: white;
   -webkit-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s;
 }
 
-.btn-hover:hover {
+.hover-change-color-word__light:hover {
+  color: #FFEBC9;
+}
+
+.hover-change-color-word__brown {
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.hover-change-color-word__brown:hover {
+  color: #D79771;
+}
+
+.hover-word-separate {
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.hover-word-separate:hover {
   letter-spacing: 3px;
 }
 
