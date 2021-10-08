@@ -16,25 +16,37 @@
     }
 }
 
-//分頁(文字)hover設定
-.previous a,
-.next a {
-    &:hover {
-        color: #D79771;
+//文字hover效果-顏色改變
+.hover-change-color {
+
+    &-bg {
+        transition: all .3s;
+
+        &:hover {
+            background-color: #FFEBC9;
+        }
+    }
+
+    &-word__light {
+        color: white;
+        transition: all .3s;
+
+        &:hover {
+            color: #FFEBC9;
+        }
+    }
+
+    &-word__brown {
+        transition: all .3s;
+
+        &:hover {
+            color: #D79771;
+        }
     }
 }
 
-//footer-icon hover效果
-.icon-hover {
-    transition: all .3s;
-
-    &:hover {
-        background-color: #FFEBC9;
-    }
-}
-
-//按鈕hover效果-間距拉開
-.btn-hover {
+//文字hover效果-間距拉開
+.hover-word-separate {
     transition: all .3s;
 
     &:hover {
