@@ -1,0 +1,8 @@
+.caret-change {
+    transition: all .3s;
+    transform: rotate(0deg);
+
+    &__active {
+        transform: rotate(180deg);
+    }
+}
