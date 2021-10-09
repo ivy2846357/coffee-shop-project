@@ -18,6 +18,12 @@
 </head>
 
 <body>
+  <div class="position-relative">
+    <a href="#" class="scroll-top-btn btn btn-coffee text-white position-fixed me-3 hover-shadow">
+      <i class="fas fa-caret-up"></i>
+    </a>
+  </div>
+
   <!-- 導覽列 -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid px-lg-5 px-3">
@@ -96,12 +102,16 @@
                                 Et
                                 deserunt
                                 tempora, magni ullam labore aut!</p>
-                            <div class="d-flex">
-                                <a href="#about-us" class="btn btn-coffee text-white px-4 py-2 me-3 hover-word-separate"
-                                    data-aos="fade-right" data-aos-delay="400">關於我們</a>
-                                <a href="#discount" class="btn btn-lightBrown text-white px-4 py-2 hover-word-separate"
-                                    data-aos="fade-right" data-aos-delay="600">優惠資訊</a>
-                            </div>
+                            <ul class="d-flex list-unstyled">
+                                <li data-aos="fade-right" data-aos-delay="400">
+                                    <a href="about.html"
+                                        class="btn btn-coffee text-white px-4 py-2 me-3 hover-word-separate">關於我們</a>
+                                </li>
+                                <li data-aos="fade-right" data-aos-delay="600">
+                                    <a href="#discount"
+                                        class="btn btn-lightBrown text-white px-4 py-2 link-btn-animate hover-word-separate">優惠資訊</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <div class="col-lg-6 mx-lg-3 bg-cover d-md-none d-lg-block" data-aos="fade-left"

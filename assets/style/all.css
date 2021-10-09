@@ -12223,6 +12223,13 @@ a {
           transform: rotate(180deg);
 }
 
+.scroll-top-btn {
+  display: none;
+  z-index: 100;
+  bottom: 5%;
+  right: 0;
+}
+
 .booking-form {
   background-color: rgba(255, 255, 255, 0.8);
   background-blend-mode: screen;

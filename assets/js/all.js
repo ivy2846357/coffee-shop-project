@@ -44,15 +44,37 @@ var swiper = new Swiper(".coffee-chef-md-mySwiper", {
     el: ".coffee-chef-md-swiper-pagination",
     clickable: true
   }
-}); //下拉選單動畫
-
+});
 $(document).ready(function () {
   $('.dropdown').click(function (e) {
-    //箭頭旋轉動畫
+    //下拉選單箭頭旋轉動畫
     $('.caret').stop().toggleClass('caret-change__active');
-  }); //下拉式選單動畫
-  // $('#myDropdown').on('show.bs.dropdown', function () {
-  //   $('.dropdown-menu').stop().slideToggle(600);
-  // })
+  }); //按鈕點擊下拉動畫
+
+  $('.link-btn-animate').click(function (e) {
+    e.preventDefault();
+    var anchor = $(this).attr('href');
+    var linkScroll = $(anchor).offset().top;
+    $('html,body').stop().animate({
+      scrollTop: linkScroll - 180
+    }, 300);
+  }); //偵測滑鼠滾動顯示/隱藏
+
+  $(window).scroll(function (e) {
+    var scrollHeight = $(this).scrollTop();
+
+    if (scrollHeight > 350) {
+      $('.scroll-top-btn').show();
+    } else {
+      $('.scroll-top-btn').hide();
+    }
+  }); //點擊回到最上層
+
+  $('.scroll-top-btn').click(function (e) {
+    e.preventDefault();
+    $('html,body').animate({
+      scrollTop: 0
+    }, 300);
+  });
 });
 //# sourceMappingURL=all.js.map
