@@ -1,7 +1,3 @@
-.parallax-img {
-    background-attachment: fixed;
-}
-
 //名人照片
 .card-img-circle {
     width: 150px;
@@ -9,4 +5,9 @@
     border: 1px solid transparent;
     border-radius: 50%;
     overflow: hidden;
+}
+
+.parallax-window {
+    min-height: 650px;
+    background: transparent;
 }
