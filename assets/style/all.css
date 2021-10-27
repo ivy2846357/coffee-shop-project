@@ -12251,16 +12251,17 @@ textarea {
   resize: none;
 }
 
-.parallax-img {
-  background-attachment: fixed;
-}
-
 .card-img-circle {
   width: 150px;
   height: 150px;
   border: 1px solid transparent;
   border-radius: 50%;
   overflow: hidden;
+}
+
+.parallax-window {
+  min-height: 650px;
+  background: transparent;
 }
 
 .shop-img {

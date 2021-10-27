@@ -76,5 +76,8 @@ $(document).ready(function () {
       scrollTop: 0
     }, 300);
   });
+  $('.parallax-window').parallax({
+    imageSrc: './assets/images/banner.jpg'
+  });
 });
 //# sourceMappingURL=all.js.map
