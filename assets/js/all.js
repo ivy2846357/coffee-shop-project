@@ -57,7 +57,7 @@ $(document).ready(function () {
     var linkScroll = $(anchor).offset().top;
     $('html,body').stop().animate({
       scrollTop: linkScroll - 180
-    }, 300);
+    }, 100);
   }); //偵測滑鼠滾動顯示/隱藏
 
   $(window).scroll(function (e) {
@@ -74,7 +74,7 @@ $(document).ready(function () {
     e.preventDefault();
     $('html,body').animate({
       scrollTop: 0
-    }, 300);
+    }, 100);
   });
   $('.parallax-window').parallax({
     imageSrc: './assets/images/banner.jpg'

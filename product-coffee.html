@@ -18,15 +18,8 @@
 </head>
 
 <body class="position-relative">
-  <!-- 回到最上面 -->
-  <div class="position-relative">
-    <a href="#" class="scroll-top-btn btn btn-coffee text-white position-fixed me-3 hover-shadow">
-      <i class="fas fa-caret-up"></i>
-    </a>
-  </div>
-
   <!-- 導覽列 -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark position-fixed w-100">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top w-100">
     <div class="container-fluid px-lg-5 px-3">
       <!-- LOGO -->
       <a class="navbar-brand text-beige" href="index.html">CC COFFEE</a>
@@ -92,7 +85,7 @@
         </div>
         <div role="tabpanel" class="coffee-list my-5">
             <!-- 咖啡商品列表 -->
-            <div class="container-md mb-5" data-aos="fade-up" data-aos-delay="200">
+            <div class="container-md mb-5" data-aos="fade-up" data-aos-delay="100">
                 <div class="list-group list-group-horizontal-md mb-4 text-center" id="myList" role="tablist">
                     <a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#home"
                         role="tab">新鮮現烘</a>
@@ -106,7 +99,7 @@
             </div>
 
             <!-- 各咖啡商品列表 -->
-            <div class="tab-content container-md" data-aos="fade-up">
+            <div class="tab-content container-md" data-aos="fade-up" data-aos-delay="200">
                 <!-- 新鮮現烘 -->
                 <div class="tab-pane fade show active" id="home" role="tabpanel">
                     <div class="row d-flex justify-content-center">
@@ -777,6 +770,15 @@
         © 2021 Zaii Hsu. All rights reserved.
       </small>
   </footer>
+
+  <!-- 回到最上面 -->
+  <div class="position-relative">
+    <a href="#" class="scroll-top-btn btn btn-coffee text-white position-fixed me-3 hover-shadow">
+      <i class="fas fa-caret-up"></i>
+    </a>
+  </div>
+
+
   <!-- bootstrap-JS -->
   <script src="./assets/js/vendors.js"></script>
   <!-- swiper-JS -->
