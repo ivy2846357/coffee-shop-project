@@ -12267,6 +12267,8 @@ textarea {
 .parallax-window {
   min-height: 650px;
   background: transparent;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: multiply;
 }
 
 .shop-img {
