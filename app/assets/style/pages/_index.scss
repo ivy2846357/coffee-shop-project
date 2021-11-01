@@ -10,4 +10,6 @@
 .parallax-window {
     min-height: 650px;
     background: transparent;
+
+    @include bg-dark;
 }
